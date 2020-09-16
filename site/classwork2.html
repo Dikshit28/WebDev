@@ -1,8 +1,160 @@
 <!DOCTYPE html>
-<html lang="">
+<html>
+    <style>
+        header{
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: xx-large;
+            font-style: italic;
+            font-weight: bolder;
+        }
+        body{
+            background-image: linear-gradient(to right, rgb(57, 224, 202) , rgb(228, 58, 86));
+            color: whitesmoke;
+        }
+        #center{
+            height: 450px;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .column {
+            float: left;
+            width: 50%;
+            font-weight: bolder;
+            font-size: x-large;
+            text-align: justify;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        h3{
+            padding-left: 25%;
+        }
+        #col{
+            padding-left: 5%;
+        }
+        button{
+            background-color: #128316;
+            width: 100%;
+            color: rgb(255, 255, 255);
+            padding: 15px;
+            margin: 10px 0px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 2px solid green;
+            box-sizing: border-box;
+        }
+        button:hover {
+            opacity: 0.7;
+        }
+        .cancelbtn {
+                width: auto;
+                padding: 10px 18px;
+                margin: 10px 5px;
+        }
+        .container {
+            width: 604px;
+            padding-left: 35px;
+        }
+        table{
+            width: 100%;
+        }
+        a{
+            color: whitesmoke;
+            font-size: x-large;
+            text-align: center;
+        }
+        .a{
+            color: whitesmoke;
+            font-size: x-large;
+        }
+    </style>
     <head>
-        <title>
-            CLASSWORK 10-Sept-2020
-        </title>
+        <title>Welcome to Huda Sec 23</title>
     </head>
+    <body>
+        <img src="./Screenshot 2020-09-16 075815.png" alt="Map of Huda sec 23" id='center'>
+        <header>
+            <hr>
+            Come eat with us at HUDA Sec-23 !!!
+            <hr>
+        </header>
+        <div class="row">
+            <div class="column">
+                <h3> All types of Cuisines available</h3>
+                <img src="https://www.anime-evo.net/wp-content/uploads/2017/10/Shokugeki-no-Soma-3-ed1.jpg" alt="FOOD" width="600px" height="500px" id ="col">
+                <form>
+                    <div class="container">
+                        <label>Username : </label>
+                        <input type="text" placeholder="Enter Username" name="username" required>
+                        <label>Password : </label>
+                        <input type="password" placeholder="Enter Password" name="password" required>
+                        <button type="submit">Login</button>
+                        <input type="checkbox" checked="checked"> Remember me &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <a href="#" style="color: wheat;">Forgot password ?</a>
+                    </div>
+                </form>
+            </div>
+            <div class="column"><br><br><br>
+                <table>
+                    <td>
+                        <div>
+                            Om Sweets & Snacks<br>
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/6/5056/d9e64c5910808b01a2a98aebec467f63_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="Om Sweets">
+                        </div>
+                        <div> &nbsp;Deepak Fast Food<br>
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/3/18277753/d8214fa995da3bbcbda2cd9380ed1458_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="Deepak">
+                        </div>
+                        <div>Gohana Famous Jalebi<br>
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/6/18281616/b0bb15fc23af9424e248b5996dabd028_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="Gohana">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            &NonBreakingSpace; Diju Da Dhaba<br>
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/9/18246999/f4c9469367542fb0923647b5220d3249_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="Om Sweets">
+                        </div>
+                        <div> &nbsp;Bikkgane Biryani<br>
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/3/307893/b14dca1c929ac4db0c3c532ed99d959b_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="Deepak">
+                        </div>
+                        <div>Faasos<br>
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/2/18349892/c2033a3d75f4c54fad6b35410f583e5b_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="Gohana">
+                        </div>
+                    </td>
+                </table>
+                <br>
+                <div style="font-size: xx-large; margin-left: 180px; margin-right: auto;">And many more !!!!!!</div>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            <table>
+                <td>
+                    <img src="unnamed-removebg-preview.png" alt="Huda logo" height="200px" width="200px">
+                </td>
+                <td style="text-align: center;">
+                    <nav>
+                        <a href="https://www.hsvphry.org.in/" target="_blank" rel="noopener noreferrer"> Official Website |</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Huda,+Sector+23,+Gurugram,+Haryana+122022/@28.5101725,77.0454377,17z/data=!3m1!4b1!4m5!3m4!1s0x390d1984232c0009:0x936e28953972a440!8m2!3d28.5102487!4d77.0470916?hl=en"> Location |</a>
+                        <a href="https://www.zomato.com/" target="_blank" rel="noopener noreferrer"> Zomato |</a>
+                        <a href="https://www.swiggy.com/" target="_blank" rel="noopener noreferrer"> Swiggy </a>
+                        <div class="a">Contact us<br>Call us at &nbsp; +91 xxxx xxx xxx<br>Email us at &nbsp; &nbsp; Sample@gmail.com</div>
+                    </nav>
+                </td>
+                <td style="text-align:right;">
+                    <img src="./map.png" alt="Map" height="200px" width="200px">
+                </td>
+            </table>
+        </footer>
+    </body>
 </html>
