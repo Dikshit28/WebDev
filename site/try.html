@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Salary Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="try.css">
+    </head>
+    <header><h2>My Salary Calculator</h2></header>
+    <body>
+
+        <div class="row">
+        <div class="column side" style="background-color:#54e346;"><br>Dikshit<br>19CSU379<br></div>
+        <div class="column middle" style="background-color:#0e49b5; color: white;">
+            <form>
+                <br>
+                Employee Name :&nbsp;&nbsp;&nbsp;&nbsp;<input  type="name" name="empname" value="" required >
+                <br><br>
+                Employee Salary :&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="sal" value="" required >
+                <br><br>
+                <button onclick="salarycalculator()">Calculate</button>
+            </form>
+        </div>
+        <div class="column side" style="background-color:#54e346;"><br>Dikshit<br>19CSU379<br></div>
+        </div>
+        </div>
+        <script>
+            function salarycalculator(){
+                var x = document.getElementById("frm1");
+                let salary=parseInt(x.elements[1].value);
+                let employeename=x.elements[0].value;
+                let netsalary=(9*(salary))/10;
+                alert('Net Salary of '+(employeename)+' is '+(netsalary));
+            }
+        </script>
+    </body>
+    <footer><a href=""></a><a href=""></a></footer>
+</html>
