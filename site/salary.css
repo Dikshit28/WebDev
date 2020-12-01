@@ -1,0 +1,24 @@
+body{
+    background-color: #0d97ac;
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    color:#DDA033;
+    font-size: 250%;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 10%;
+    font-family: 'Rye', cursive;
+}
+button:hover {
+    color:#DDA033;
+    background-color:#065125;
+}
+button{
+    background-color:#DDA033;
+    color:#065125;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+input{
+    width: 20%;
+}
