@@ -1,0 +1,180 @@
+<html><head>
+	<title>Tic Tac</title>
+	<link rel="stylesheet" type="text/css" href="css/style-main.css">
+
+	<script src="https://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101"></script><script src="https://partner.googleadservices.com/gampad/cookie.js?domain=tictactoe.github.io&amp;callback=_gfp_s_&amp;client=ca-pub-8772664560257313"></script><script src="https://pagead2.googlesyndication.com/pagead/js/r20201112/r20190131/show_ads_impl_fy2019.js" id="google_shimpl"></script><script type="text/javascript" src="js/winning.js"></script>
+	<script type="text/javascript" src="js/ai.js"></script>
+	<script type="text/javascript" src="js/possibility.js"></script>
+
+	<script type="text/javascript">
+		var done = 0;
+
+		var sectionSpace = [
+			0, 0, 0, 0, 0, 0, 0, 0, 0
+		];
+		var sectionSpaceString = [
+			"empty","empty","empty","empty","empty","empty","empty","empty","empty"
+		];
+
+		var condition,userInput,IsCornurEmpty,IsCenterEmpty,IsSideEmpty;
+		var corner,randm,valu;
+		randomise();
+		function checkEmpty(randm){
+			if(randm <= 9){
+				switch(sectionSpace[randm]){
+					case 0:{
+						condition = 1;
+						checkCondition();
+						return condition;
+						break;
+					}
+					case 1:{
+						condition = 0;
+						randomise();
+						checkCondition();
+						return condition;
+						break;
+					}
+				}
+			}
+			else{
+				randomise();
+			}
+		}
+
+		//function begins
+		function addIt(userInput){
+			//sectionSpace[userInput] = 1;
+			switch(sectionSpace[userInput]){
+				case 0:{
+					sectionSpace[userInput] = 1;
+					if(!(document.getElementById('results').innerHTML == "You won!" || document.getElementById('results').innerHTML == "You Lost!")){
+						addCross(userInput);
+						checkHorizontalCross();
+						checkVerticalCross();
+						checkDiagCross();
+						if(!(document.getElementById('results').innerHTML == "You won!" || document.getElementById('results').innerHTML == "You Lost!")){
+							checkDraw();
+						}
+
+						for(var i=0; i<=8; i++){
+							document.getElementById('sec'+i).disabled = true;
+						}
+						setTimeout(function (){checkEmpty(randm);}, 1000);
+					}
+
+					break;
+				}
+				case 1:{
+					break;
+				}
+			}
+			
+		}
+
+		function addCircle(valu){
+			if(done == 0){
+				sectionSpace[valu] = 1;
+				var circleElem = document.createElement("img");
+				circleElem.setAttribute("src", "img/circle.png");
+				document.getElementById('sec' +valu).appendChild(circleElem);
+				sectionSpaceString[valu] = "circle";
+
+				done += 1;
+				for(var i=0; i<=8; i++){
+					document.getElementById('sec'+i).disabled = false;
+				}
+			}
+		}
+		function addCross(userInput){
+			sectionSpace[userInput] = 1;
+			var crossElem = document.createElement("img");
+			crossElem.setAttribute("src", "img/cross.png");
+			document.getElementById('sec' +userInput).appendChild(crossElem);
+			sectionSpaceString[userInput] = "cross";
+			done = 0;
+		}
+		function checkCondition(){
+			switch(condition){
+				case 1:{
+					if(!(document.getElementById('results').innerHTML == "You won!" || document.getElementById('results').innerHTML == "You Lost!")){
+						IsCornurEmpty = checkCornur();
+						IsSideEmpty = checkSides();
+						IsCenterEmpty = checkCentur();
+						(IsCenterEmpty ? IsSideEmpty : IsCornurEmpty)
+
+						console.log("check user probab...");
+						checkUserPrb();
+					}
+					checkHorizontalCircle();
+					checkVerticalCircle();
+					checkDiagCircle();
+					if(!(document.getElementById('results').innerHTML == "You won!" || document.getElementById('results').innerHTML == "You Lost!")){
+							checkDraw();
+					}
+					break;
+				}
+				case 0:{
+					randomise();
+					checkEmpty(randm);
+					break;
+				}
+			}
+		}
+		function randomise(){
+			randm = Math.floor(Math.random() * 9);
+			corner = Math.floor(Math.random() * 4);
+		}
+	</script>
+	<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+ 		 (adsbygoogle = window.adsbygoogle || []).push({
+   		 google_ad_client: "ca-pub-8772664560257313",
+   		 enable_page_level_ads: true
+ 		 });
+	</script>
+<link rel="preload" href="https://adservice.google.co.in/adsid/integrator.js?domain=tictactoe.github.io" as="script"><script type="text/javascript" src="https://adservice.google.co.in/adsid/integrator.js?domain=tictactoe.github.io"></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=tictactoe.github.io" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=tictactoe.github.io"></script></head>
+<body data-new-gr-c-s-check-loaded="14.984.0" data-gr-ext-installed="">
+	<div id="main">
+
+		<div id="upper">
+			<button id="sec0" onclick="addIt(0);">
+				
+			</button>
+			<button id="sec1" onclick="addIt(1);">
+				
+			</button>
+			<button id="sec2" onclick="addIt(2);">
+					
+			</button>
+		</div>
+
+		<div id="midd">
+			<button id="sec3" onclick="addIt(3);">
+			
+			</button>
+			<button id="sec4" onclick="addIt(4);">
+				
+			</button>
+			<button id="sec5" onclick="addIt(5);">
+				
+			</button>
+		</div>
+		<div id="bottm">
+			<button id="sec6" onclick="addIt(6);">	
+			
+			</button>
+			<button id="sec7" onclick="addIt(7);">
+			
+			</button>
+			<button id="sec8" onclick="addIt(8);">
+
+			</button>
+		</div>
+	</div>
+	<div id="results">
+		
+	</div>
+
+
+<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" src="https://googleads.g.doubleclick.net/pagead/ads?guci=2.2.0.0.2.2.0.0&amp;client=ca-pub-8772664560257313&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1522484528&amp;plat=1%3A32776%2C2%3A32776%2C9%3A32776%2C10%3A32%2C11%3A32%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C40%3A32&amp;format=0x0&amp;url=https%3A%2F%2Ftictactoe.github.io%2F&amp;ea=0&amp;flash=0&amp;pra=5&amp;wgl=1&amp;tt_state=W3siaXNzdWVyT3JpZ2luIjoiaHR0cHM6Ly9hZHNlcnZpY2UuZ29vZ2xlLmNvbSIsInN0YXRlIjowfSx7Imlzc3Vlck9yaWdpbiI6Imh0dHBzOi8vYXR0ZXN0YXRpb24uYW5kcm9pZC5jb20iLCJzdGF0ZSI6MH1d&amp;dt=1606905414270&amp;bpp=6&amp;bdt=402&amp;idt=210&amp;shv=r20201112&amp;cbv=r20190131&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;nras=1&amp;correlator=121420882931&amp;frm=20&amp;pv=2&amp;ga_vid=1754099561.1606905415&amp;ga_sid=1606905415&amp;ga_hid=858348782&amp;ga_fc=0&amp;iag=0&amp;icsg=12266&amp;dssz=10&amp;mdo=0&amp;mso=0&amp;u_tz=330&amp;u_his=2&amp;u_java=0&amp;u_h=864&amp;u_w=1536&amp;u_ah=834&amp;u_aw=1536&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=5&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1536&amp;bih=763&amp;scr_x=0&amp;scr_y=0&amp;eid=42530672%2C21066922&amp;oid=3&amp;pvsid=2707755773708688&amp;pem=387&amp;rx=0&amp;eae=2&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1536%2C0%2C1536%2C834%2C1536%2C763&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=8192&amp;bc=31&amp;ifi=0&amp;uci=a!0&amp;fsb=1&amp;dtd=237" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!0" data-load-complete="true"></iframe></ins></ins></ins><iframe id="google_osd_static_frame_9834349644710" name="google_osd_static_frame" __idm_frm__="971" style="display: none; width: 0px; height: 0px;"></iframe></body><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20201112/r20190131/zrt_lookup.html#" data-ad-client="ca-pub-8772664560257313" style="display: none;"></iframe></html>
