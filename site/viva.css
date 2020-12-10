@@ -5,9 +5,14 @@
 }
 body{
     text-align: center;
-    background-color: #202040;
     color: #ff6363;
     font-size: x-large;
+    background-color: #202040;
+    background-image: url("temperature-2-512.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: soft-light;
 }
 .wrap{
     width: 70%;
