@@ -19,10 +19,16 @@ body {
     background-color: var(--blue);
 }
 
+main {
+    width: 90%;
+    margin: auto;
+}
+
 header {
-    width: 95%;
     margin: 2rem;
     background-color: var(--light);
+    width: 100%;
+    margin: auto;
 }
 
 .header-ul {
@@ -40,7 +46,7 @@ header {
 }
 
 .navbar {
-    width: 93%;
+    width: 100%;
     margin: auto;
     background-color: var(--light);
     padding: 0.8rem;
@@ -64,7 +70,7 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 1.5rem auto;
-    width: 95%;
+    width: 100%;
 }
 
 .image {
@@ -122,4 +128,33 @@ a {
 
 .specs {
     font-size: 1.3rem;
+}
+
+.recommend {
+    margin: 1rem auto 1rem auto;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    background-color: var(--light);
+    width: 100%;
+}
+
+.also-bought {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.recommend ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.recommend img:hover {
+    transform: scale(1.5);
+}
+
+footer {
+    width: 100%;
+    margin: auto;
+    background-color: var(--orange);
 }
