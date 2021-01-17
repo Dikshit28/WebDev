@@ -1,0 +1,108 @@
+:root {
+  --black: rgb(22, 22, 29);
+  --white: rgb(245, 245, 245);
+}
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-size: 300;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  overflow: visible;
+  font-family: "Ubuntu", sans-serif;
+}
+.navbar {
+  position: fixed;
+  width: 20rem;
+  height: 100vh;
+  background-color: black;
+  left: 4rem;
+  top: 0rem;
+  box-shadow: 0 4px 8px 0 rgba(245, 245, 245, 0.2),
+    0 6px 20px 0 rgba(245, 245, 245, 0.19);
+}
+.navbar ul {
+  list-style: none;
+  padding: 1rem 0rem;
+  margin: auto;
+  width: 90%;
+}
+.navbar li {
+  border: 1px solid var(--white);
+  padding: 1rem;
+  margin: 1rem 0rem;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(245, 245, 245, 0.2),
+    0 6px 20px 0 rgba(245, 245, 245, 0.19);
+}
+.navbar li:hover {
+  background-color: var(--white);
+  color: black;
+  transition-duration: 1s;
+}
+.navbar a {
+  color: var(--white);
+  text-decoration: none;
+}
+.profile {
+  box-shadow: 0 4px 8px 0 rgba(245, 245, 245, 0.2),
+    0 6px 20px 0 rgba(245, 245, 245, 0.19);
+  position: relative;
+  height: 100vh;
+  width: 68rem;
+  left: 26rem;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+.skills {
+  box-shadow: 0 4px 8px 0 rgba(245, 245, 245, 0.2),
+    0 6px 20px 0 rgba(245, 245, 245, 0.19);
+  position: relative;
+  height: 100vh;
+  width: 68rem;
+  left: 26rem;
+}
+.projects {
+  box-shadow: 0 4px 8px 0 rgba(245, 245, 245, 0.2),
+    0 6px 20px 0 rgba(245, 245, 245, 0.19);
+  position: relative;
+  height: 100vh;
+  width: 68rem;
+  left: 26rem;
+}
+.contact {
+  box-shadow: 0 4px 8px 0 rgba(245, 245, 245, 0.2),
+    0 6px 20px 0 rgba(245, 245, 245, 0.19);
+  position: relative;
+  height: 100vh;
+  width: 68rem;
+  left: 26rem;
+}
+.img > img {
+  position: relative;
+  border-radius: 50%;
+  width: 25%;
+  left: 70%;
+  top: 1rem;
+}
+.name {
+  position: relative;
+  width: 25%;
+  left: 73.3%;
+  top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  font-stretch: extra-expanded;
+  margin-top: 0.5rem;
+}
+.bio {
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin: 3rem auto 1rem;
+  width: 90%;
+}

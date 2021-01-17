@@ -1,0 +1,102 @@
+:root {
+  --black: rgb(22, 22, 29);
+  --white: rgb(245, 245, 245);
+  --torquoise: rgb(64, 224, 208);
+  --silver: rgb(192, 192, 192);
+  --royalblue: rgb(123, 150, 234);
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+}
+.head {
+  background-color: var(--royalblue);
+}
+.links {
+  background-color: var(--black);
+  color: var(--white);
+  border: 2px solid var(--white);
+  display: inline;
+  text-align: center;
+  padding: 1% 2.5%;
+  margin: auto 1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+}
+.links > a {
+  color: var(--white);
+  text-decoration: none;
+}
+.links:hover {
+  background-color: var(--white);
+  transition-duration: 1s;
+  border: 2px solid var(--black);
+}
+.links:hover > a {
+  color: var(--black);
+}
+
+.box {
+  box-shadow: 0 4px 8px 0 rgba(245, 245, 245, 0.2),
+    0 6px 20px 0 rgba(245, 245, 245, 0.19);
+  min-height: 88vh;
+}
+.headline {
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--royalblue);
+}
+.headline-1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: var(--torquoise);
+}
+/*PROFILE*/
+.me {
+  width: 17rem;
+  border-radius: 50%;
+  padding: 1%;
+  border: 5px var(--royalblue) solid;
+}
+.me:hover {
+  border: 5px var(--torquoise) solid;
+}
+.name {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--royalblue);
+}
+.bio {
+  font-size: 1.3rem;
+}
+/*skills*/
+/*contact*/
+.grad {
+  background-image: linear-gradient(-45deg, var(--torquoise), var(--royalblue));
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.4),
+    0 6px 20px 0 rgba(255, 255, 255, 0.4);
+}
+.placeholder {
+  font-weight: 800;
+  text-align: center;
+}
+.submit {
+  width: 70%;
+}
+.socials {
+  width: 2rem;
+}
+.socials:hover {
+  transform: scale(1.5);
+}
+.socials:active {
+  transform: scale(1.5);
+}
+.bar {
+  background-image: linear-gradient(-45deg, var(--torquoise), var(--royalblue));
+}
