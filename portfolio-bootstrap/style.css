@@ -75,6 +75,8 @@ body {
   font-size: 1.3rem;
 }
 /*skills*/
+/*PROJECTS*/
+
 /*contact*/
 .grad {
   background-image: linear-gradient(-45deg, var(--torquoise), var(--royalblue));
@@ -99,4 +101,6 @@ body {
 }
 .bar {
   background-image: linear-gradient(-45deg, var(--torquoise), var(--royalblue));
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.4),
+    0 6px 20px 0 rgba(255, 255, 255, 0.4);
 }
