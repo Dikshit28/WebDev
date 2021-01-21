@@ -1,0 +1,28 @@
+:root {
+  --darkgreen: #00b9a9;
+  --lightgreen: #e9fffd;
+  --black: #474747;
+  --white: #ffffff;
+}
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--black);
+}
+/*LEFT START*/
+.left {
+  background-color: var(--darkgreen);
+  color: var(--white);
+}
+/*NAVBAR*/
+.logo {
+  border-radius: 50%;
+  height: 2rem;
+}

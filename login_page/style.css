@@ -1,0 +1,74 @@
+:root {
+  --darkgreen: #00b9a9;
+  --darkergreen: #04746a;
+  --lightgreen: #e9fffd;
+  --black: #474747;
+  --white: #ffffff;
+}
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--black);
+}
+.box {
+  height: 25vh;
+}
+/*LEFT START*/
+.style {
+  background-color: var(--darkgreen);
+  color: var(--white);
+  height: 100vh;
+}
+/*NAVBAR*/
+.fixing {
+  position: fixed;
+  top: 0%;
+}
+.logo {
+  border-radius: 50%;
+  height: 2rem;
+}
+/*content*/
+.rows {
+  text-align: center;
+}
+/*RIGHT*/
+.login {
+  background-color: var(--lightgreen);
+  color: var(--darkgreen);
+  height: 100vh;
+  text-align: center;
+}
+.login-body {
+  text-align: center;
+}
+/*form*/
+.login-btn {
+  width: 100%;
+  background-color: var(--darkgreen);
+  color: var(--white);
+}
+.login-btn:hover {
+  background-color: var(--darkergreen);
+  color: var(--white);
+  transition: 0.5s;
+}
+.right {
+  color: var(--darkgreen);
+}
+.right:hover {
+  color: var(--darkergreen);
+}
+.lft {
+  text-align: left;
+}
+.rgt {
+  text-align: right;
+}
