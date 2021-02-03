@@ -1,0 +1,49 @@
+:root {
+  --darkgreen: #00b9a9;
+  --darkergreen: #04746a;
+  --lightgreen: #e9fffd;
+  --black: #474747;
+  --white: #ffffff;
+}
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+a {
+  color: var(--darkgreen);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--darkergreen);
+}
+html body {
+  background-color: var(--lightgreen);
+}
+/*NAVBAR*/
+.fixing {
+  position: fixed;
+  top: 0%;
+}
+.logo {
+  border-radius: 50%;
+  height: 2rem;
+}
+
+/*TABLE*/
+table {
+  text-align: center;
+}
+/*FOR CHANGES IN TABLE HEAD*/
+thead {
+  background-color: var(--darkergreen);
+  color: var(--white);
+  font-weight: 400;
+}
+/*FOR CHANGES IN TABLE BODY*/
+tbody {
+}
+
+tr:nth-child(even) {
+  background-color: var(--darkgreen);
+}
