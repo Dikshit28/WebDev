@@ -1,0 +1,24 @@
+TELSUKO - playlist
+https://www.youtube.com/playlist?list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV
+
+W3 Schools - Docs 
+https://www.w3schools.com/js/js_intro.asp
+
+Code with harry - playlist
+https://www.youtube.com/playlist?list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg
+
+JavaScript mozilla docs -
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+Devdocs -
+https://devdocs.io/javascript/
+
+WesBos -
+https://courses.wesbos.com/account/access/5feff3053a75762422aabf13
+https://github.com/wesbos/JavaScript30
+
+Coding Heroes -
+https://codingheroes.io/resources/
+
+FullStackOpen - 
+https://fullstackopen.com/en/part1/java_script#variables
