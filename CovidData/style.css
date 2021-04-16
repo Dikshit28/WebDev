@@ -3,12 +3,21 @@
   margin: 0%;
   box-sizing: border-box;
 }
-section {
+html,
+body {
+  overflow-x: hidden;
+}
+body {
   background-image: radial-gradient(circle, #26677a, #194350);
+  position: relative;
+}
+section {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  padding: 17vh 0vh;
-  height: 100vh;
+  padding: 17vh 0vh 0vh 0vh;
+  height: 100%;
+  overflow: hidden;
 }
 h1 {
   color: #ff584f;
@@ -22,12 +31,50 @@ p {
   color: #ff635b;
 }
 .image {
-  position: absolute;
-  bottom: 0%;
+  position: fixed;
   width: 100vw;
+  display: flex;
+  justify-content: space-around;
 }
-img {
-  height: 600px;
+.doc {
+  height: 65vh;
   width: auto;
-  transform: translate(25%);
+}
+.bg {
+  transform: rotate(45deg);
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  height: auto;
+  width: 60%;
+  z-index: -10;
+  opacity: 0.2;
+}
+.bg1 {
+  left: 0%;
+}
+.bg2 {
+  left: 100%;
+}
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .doc {
+    opacity: 0;
+  }
+  .bg {
+    transform: rotate(0deg);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .bg1 {
+    transform: translate(-50%, -150%);
+  }
+  .bg2 {
+    transform: translate(-50%, 50%);
+  }
 }
