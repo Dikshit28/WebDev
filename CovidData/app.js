@@ -1,5 +1,4 @@
 const covidUrl="https://coronavirus-19-api.herokuapp.com/all"
-
 //Defining async function
 async function getapi(url) {
     
