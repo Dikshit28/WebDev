@@ -27,28 +27,28 @@ body {
 }
 
 #section-1 {
-  background-image: url("./assets/fuji-mountain-with-milky-way-night.jpg");
+  background-image: url("./assets/min-fuji-mountain-with-milky-way-night.jpg");
   position: relative;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 #section-2 {
-  background-image: url("./assets/3d-render-flowing-particles-modern-techno-design.jpg");
+  background-image: url("./assets/min-3d-render-flowing-particles-modern-techno-design.jpg");
   position: relative;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 #section-3 {
-  background-image: url("./assets/balloons-arrangement-with-purple-background.jpg");
+  background-image: url("./assets/min-balloons-arrangement-with-purple-background.jpg");
   position: relative;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 #section-4 {
-  background-image: url("./assets/green-technology-white-light-lines-patern.jpg");
+  background-image: url("./assets/min-green-technology-white-light-lines-patern.jpg");
   position: relative;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
