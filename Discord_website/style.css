@@ -1,0 +1,50 @@
+:root {
+  --purple1: #0c0032;
+  --purple2: #190061;
+  --purple3: #240090;
+  --purple4: #3500d3;
+  --black1: #282828;
+  --white1: rgb(205, 205, 205);
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  color: var(--white1);
+  width: 100vw;
+  text-align: center;
+  overflow-x: hidden;
+}
+.sections {
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#section-1 {
+  background-color: var(--purple1);
+}
+#section-2 {
+  background-color: var(--purple2);
+}
+#section-3 {
+  background-color: var(--purple3);
+}
+#section-4 {
+  background-color: var(--purple4);
+}
+.headline-1-img {
+  max-height: 7rem;
+}
+.about {
+  font-size: 1.6rem;
+  text-align: left;
+}
+.space {
+  height: 2vh;
+}
