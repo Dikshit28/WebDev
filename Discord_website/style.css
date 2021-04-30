@@ -4,20 +4,19 @@
   --purple3: #240090;
   --purple4: #3500d3;
   --black1: #282828;
-  --white1: rgb(205, 205, 205);
+  --white1: rgb(255, 255, 255);
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 body {
   color: var(--white1);
   width: 100vw;
   text-align: center;
   overflow-x: hidden;
+  font-family: "Courier New", Courier, monospace;
 }
 .sections {
   min-height: 100vh;
@@ -26,24 +25,45 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 #section-1 {
-  background-color: var(--purple1);
+  background-image: url("./assets/fuji-mountain-with-milky-way-night.jpg");
+  position: relative;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 #section-2 {
-  background-color: var(--purple2);
+  background-image: url("./assets/3d-render-flowing-particles-modern-techno-design.jpg");
+  position: relative;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 #section-3 {
-  background-color: var(--purple3);
+  background-image: url("./assets/balloons-arrangement-with-purple-background.jpg");
+  position: relative;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 #section-4 {
-  background-color: var(--purple4);
+  background-image: url("./assets/green-technology-white-light-lines-patern.jpg");
+  position: relative;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 .headline-1-img {
   max-height: 7rem;
 }
+.headline-1-text {
+  font-weight: 600;
+}
 .about {
   font-size: 1.6rem;
   text-align: left;
+  font-weight: 600;
 }
 .space {
   height: 2vh;
