@@ -40,20 +40,6 @@ body {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
-#section-3 {
-  background-image: url("./assets/min-balloons-arrangement-with-purple-background.jpg");
-  position: relative;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-}
-#section-4 {
-  background-image: url("./assets/min-green-technology-white-light-lines-patern.jpg");
-  position: relative;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-}
 .headline-1-img {
   max-height: 7rem;
 }
