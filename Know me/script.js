@@ -15,8 +15,7 @@ opener.addEventListener("click", function () {
     else {
         icon.classList.remove("fa-bars");
         icon.classList.add("fa-times");
-
-
+        opener.classList.remove("act");
         buttons.forEach(function (button) {
             button.style.transform = "scaleY(1)";
             button.style.visibility = "visible";
