@@ -1,0 +1,79 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+:root {
+  --dartmouth-green: #1d6f33ff;
+  --charleston-green: #1f2d2eff;
+  --light-green: #38b54b;
+  --gray: #e6e6e6;
+}
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+body {
+  font-family: "Titillium Web", sans-serif;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+/*TO THE TOP BUTTON*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: 0.2rem whitesmoke solid;
+  outline: none;
+  background-color: var(--dartmouth-green);
+  color: whitesmoke;
+  cursor: pointer;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  border-radius: 15px;
+}
+#myBtn:hover {
+  background-color: black;
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+}
+.navs {
+  background: transparent;
+}
+.links {
+  display: flex;
+  justify-content: end;
+}
+.home {
+  background-image: url(./images/background.png);
+  background-color: var(--charleston-green);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about {
+  background-color: var(--light-green);
+}
+.portfolio {
+  background-color: var(--charleston-green);
+}
+.contact {
+  background-image: url(./images/bg2.jpg);
+  background-color: var(--dartmouth-green);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
