@@ -1,3 +1,6 @@
+.test-color {
+  background-color: red;
+}
 * {
   margin: 0%;
   padding: 0%;
@@ -7,7 +10,8 @@
 :root {
   --dartmouth-green: #1d6f33ff;
   --charleston-green: #1f2d2eff;
-  --light-green: #38b54b;
+  --text: #ce720f;
+  --light-green: #055474;
   --gray: #e6e6e6;
 }
 html {
@@ -30,8 +34,8 @@ body {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 0px;
+  right: 0px;
   z-index: 99;
   border: 0.2rem whitesmoke solid;
   outline: none;
@@ -47,7 +51,7 @@ body {
 }
 
 .section {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 .navs {
@@ -58,11 +62,26 @@ body {
   justify-content: end;
 }
 .home {
-  background-image: url(./images/background.png);
+  background-image: url(./images/bgs1.jpg);
   background-color: var(--charleston-green);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: whitesmoke;
+}
+.name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(170, 170, 170);
+}
+.desc {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.home-buts {
+  font-family: inherit;
+  font-size: 1.3rem;
+  font-weight: 400;
 }
 .about {
   background-color: var(--light-green);
