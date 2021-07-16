@@ -1,5 +1,8 @@
-.test-color {
+.test-color1 {
   background-color: red;
+}
+.test-color2 {
+  background-color: green;
 }
 * {
   margin: 0%;
@@ -52,22 +55,26 @@ body {
 .section {
   min-height: 100vh;
   width: 100vw;
+  position: relative;
 }
+/* NAV BAR*/
 .nav {
   width: 90%;
-  top: 5%;
+  top: 4%;
   left: 50%;
   transform: translate(-50%, 0%);
   position: fixed;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  z-index: 99;
   color: whitesmoke;
   font-size: 1.5rem;
-  align-items: baseline;
 }
 .brand {
   padding-left: 3rem;
   font-size: 2rem;
+  font-weight: 600;
   color: inherit;
   text-decoration: none;
 }
@@ -83,13 +90,29 @@ body {
   color: inherit;
   text-decoration: none;
   opacity: 0.8;
+  font-style: italic;
+}
+.nav-but {
+  background: transparent;
+  border: whitesmoke 2px solid;
+  border-radius: 7px;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  padding: 0.6rem 1rem;
+}
+.nav-but:hover {
+  background: whitesmoke;
+  color: var(--charleston-green);
 }
 .nav-links:hover,
 .nav-links:focus,
 .nav-links:active {
   opacity: 1;
   outline: 0;
+  text-shadow: whitesmoke 0.2rem 0.2rem 0.2rem;
 }
+/* NAV END */
+/* HOME PAGE */
 .home {
   background-image: url(./images/bgs1.jpg);
   background-color: var(--charleston-green);
@@ -98,7 +121,70 @@ body {
   background-size: cover;
   color: whitesmoke;
 }
-
+.wrapper {
+  position: relative;
+  padding-top: 9rem;
+  display: grid;
+  width: 100%;
+  margin: auto;
+  grid-template-columns: 1.8fr 1fr;
+}
+.data {
+  padding: 5rem 6rem 0rem 6rem;
+}
+.name {
+  font-size: 3rem;
+  font-weight: 900;
+  color: inherit;
+}
+.desc {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 1.5rem auto;
+}
+.buts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem 5rem 3rem auto;
+}
+.home-buts {
+  display: flex;
+  border: whitesmoke 3px solid;
+  border-radius: 3px;
+  padding: 1rem 1rem;
+  width: 47%;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: italic;
+}
+.home-buts:hover {
+  scale: 1.1;
+  background: whitesmoke;
+  color: var(--charleston-green);
+  font-style: normal;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.me {
+  width: 25rem;
+  margin-top: 3rem;
+  border: whitesmoke 3px solid;
+  border-radius: 50%;
+  background-color: rgba(245, 245, 245, 0.2);
+}
+.icons {
+  list-style: none;
+  color: inherit;
+  background: transparent;
+}
+/* HOME PAGE ENDS */
 .about {
   background-color: var(--dark-blue);
 }
