@@ -175,15 +175,64 @@ body {
 .me {
   width: 25rem;
   margin-top: 3rem;
-  border: whitesmoke 3px solid;
   border-radius: 50%;
   background-color: rgba(245, 245, 245, 0.2);
 }
-.icons {
-  list-style: none;
-  color: inherit;
-  background: transparent;
+#me {
+  border-top: var(--orange) 3px solid;
+  border-bottom: var(--dark-blue) 3px solid;
+  animation: spin 10s linear infinite;
 }
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.icons {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.icons li {
+  margin: 1rem auto;
+  list-style: none;
+}
+.icons i {
+  font-size: 2rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  margin: auto auto;
+  text-align: center;
+  line-height: 3rem;
+}
+.fab {
+  color: white;
+  transition: all 0.5s;
+}
+.fa-linkedin-in {
+  background-color: #0e76a8;
+}
+.fa-github {
+  background-color: #333;
+}
+.fa-facebook {
+  background-color: #3b5998;
+}
+.fa-instagram {
+  background-color: #bc2a8d;
+}
+.fa-github:hover,
+.fa-linkedin-in:hover,
+.fa-facebook:hover,
+.fa-instagram:hover {
+  cursor: pointer;
+  background: transparent;
+  transform: scale(1.5);
+}
+
 /* HOME PAGE ENDS */
 .about {
   background-color: var(--dark-blue);
