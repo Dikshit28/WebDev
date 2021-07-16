@@ -10,8 +10,8 @@
 :root {
   --dartmouth-green: #1d6f33ff;
   --charleston-green: #1f2d2eff;
-  --orange: #ce720f;
-  --dark-blue: #055474;
+  --text: #ce720f;
+  --light-green: #055474;
   --gray: #e6e6e6;
 }
 html {
@@ -39,7 +39,7 @@ body {
   z-index: 99;
   border: 0.2rem whitesmoke solid;
   outline: none;
-  background-color: var(--orange);
+  background-color: var(--dartmouth-green);
   color: whitesmoke;
   cursor: pointer;
   padding: 0.7rem;
@@ -49,46 +49,17 @@ body {
 #myBtn:hover {
   background-color: black;
 }
+
 .section {
   min-height: 100vh;
   width: 100vw;
 }
-.nav {
-  width: 90%;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  position: fixed;
+.navs {
+  background: transparent;
+}
+.links {
   display: flex;
-  justify-content: space-between;
-  color: whitesmoke;
-  font-size: 1.5rem;
-  align-items: baseline;
-}
-.brand {
-  padding-left: 3rem;
-  font-size: 2rem;
-  color: inherit;
-  text-decoration: none;
-}
-.nav-list {
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-}
-.nav-list > li {
-  margin: auto 1rem;
-}
-.nav-links {
-  color: inherit;
-  text-decoration: none;
-  opacity: 0.8;
-}
-.nav-links:hover,
-.nav-links:focus,
-.nav-links:active {
-  opacity: 1;
-  outline: 0;
+  justify-content: end;
 }
 .home {
   background-image: url(./images/bgs1.jpg);
@@ -98,16 +69,29 @@ body {
   background-size: cover;
   color: whitesmoke;
 }
-
-.about {
-  background-color: var(--dark-blue);
+.name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(170, 170, 170);
 }
-.profile {
+.desc {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.home-buts {
+  font-family: inherit;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.about {
+  background-color: var(--light-green);
+}
+.portfolio {
   background-color: var(--charleston-green);
 }
 .contact {
   background-image: url(./images/bg2.jpg);
-  background-color: var(--orange);
+  background-color: var(--dartmouth-green);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

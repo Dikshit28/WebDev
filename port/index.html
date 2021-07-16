@@ -8,8 +8,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
             integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
             crossorigin="anonymous" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <title>Know Me</title>
     </head>
@@ -18,67 +16,21 @@
         <button onclick="topFunction()" id="myBtn" title="Go to top" class='me-sm-3 mb-sm-3'>
             <i class="fa fa-angle-double-up" aria-hidden="true"></i>
         </button>
-        <nav class="navbar navbar-expand-lg bg-transparent fixed-top navbar-dark navs fs-4 fw-bolder">
-            <div class="container-fluid">
-                <a class="navbar-brand fs-1" href="#home">DeeAyy</a>
-                <div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link active text-decoration-underline" aria-current="page"
-                                href="#home">Home</a>
-                            <a class="nav-link" href="#about">About&nbsp;Me</a>
-                            <a class="nav-link" href="#portfolio">Profile</a>
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div class="section home" id='home'>
-            <div class="container-fluid mx-auto">
-                <div class="row pt-5">
-                    <div class="col-lg-8 pt-5 mt-sm-5">
-                        <div class="row pt-sm-4 ps-sm-5">
-                            <div class="col-10 mx-auto ps-sm-5 pt-sm-5 pb-md-3 name">Hello I'm Dikshit 👋👋</div>
-                            <div class="col-10 mx-auto ps-sm-5 desc">
-                                We are a creative group
-                                of people who design
-                                influential brands and
-                                digital experiences.
-                            </div>
-                            <div class="col-10 mx-auto ps-sm-5 py-sm-5">
-                                <a href="#about" class="btn btn-outline-light home-buts px-5 mb-2">
-                                    Know&nbsp;me
-                                </a>
-                                <a href=" #contact" class="btn btn-outline-light home-buts px-5 mb-2">
-                                    Start&nbsp;a&nbsp;project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 pt-5 mt-sm-5">
-                        <div class="row">
-                            <div class="col-xl text-center">
-                                <img src="./images/me-rem.png" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-xl text-center">la</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="nav">
+            <a href="#home" class="brand">DeeAyy</a>
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-links">Home</a></li>
+                <li><a href="#about" class="nav-links">About</a></li>
+                <li><a href="#profile" class="nav-links">Profile</a></li>
+                <li><a href="#contact" class="nav-links">Contact</a></li>
+                <li><button class="nav-but"> <i class="fa fa-bars" aria-hidden="true"></i></button></li>
+            </ul>
         </div>
+        <div class="section home" id='home'>Home</div>
         <div class="section about" id='about'>about</div>
-        <div class="section portfolio" id='portfolio'>portfolio</div>
+        <div class="section profile" id='profile'>portfolio</div>
         <div class="section contact" id='contact'>contact</div>
         <script src="script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
     </body>
 
 </html>
