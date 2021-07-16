@@ -172,16 +172,65 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
+.img {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+}
 .me {
   width: 25rem;
   margin-top: 3rem;
   border-radius: 50%;
   background-color: rgba(245, 245, 245, 0.2);
 }
-#me {
-  border-top: var(--orange) 3px solid;
-  border-bottom: var(--dark-blue) 3px solid;
-  animation: spin 10s linear infinite;
+.border {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  right: 0;
+  bottom: -3rem;
+  background: transparent;
+  border-radius: 50%;
+  border-top: 4px solid var(--orange);
+  border-right: 4px solid var(--dark-blue);
+  border-bottom: 4px solid var(--orange);
+  border-left: 4px solid var(--dark-blue);
+  -webkit-animation-name: Rotate;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: Rotate;
+  -moz-animation-duration: 10s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: Rotate;
+  -ms-animation-duration: 10s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+}
+@-webkit-keyframes Rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes Rotate {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes Rotate {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
 }
 @keyframes spin {
   100% {
