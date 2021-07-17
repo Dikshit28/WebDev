@@ -234,11 +234,6 @@ body {
     -ms-transform: rotate(360deg);
   }
 }
-@keyframes spin {
-  100% {
-    transform: rotate(1turn);
-  }
-}
 .icons {
   margin-top: 3rem;
   display: flex;
