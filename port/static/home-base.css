@@ -15,6 +15,7 @@
   --charleston-green: #1f2d2eff;
   --orange: #ce720f;
   --dark-blue: #055474;
+  --bg-blue: #121b1a;
   --gray: #e6e6e6;
 }
 html {
@@ -63,7 +64,7 @@ body {
   top: 4%;
   left: 50%;
   transform: translate(-50%, 0%);
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,6 +1,6 @@
 .contact {
   background-image: url(./images/bg3.jpg);
-  background-color: var(--orange);
+  background-color: var(--bg-blue);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -87,6 +87,7 @@
   animation: mov 2.5s ease-in-out 0s infinite forwards;
   cursor: pointer;
   border-radius: 50%;
+  box-shadow: whitesmoke 0rem 0rem 1rem;
 }
 @keyframes mov {
   0% {
