@@ -305,6 +305,20 @@ body {
   .social {
     flex-direction: column;
   }
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .me {
+    width: 20rem;
+  }
+  .border {
+    top: 4rem;
+    bottom: 1rem;
+    left: 2.5rem;
+    right: 2.5rem;
+  }
   .icons {
     display: flex;
     flex-direction: row;
