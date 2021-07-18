@@ -287,3 +287,18 @@ body {
   transform: scale(1.5);
 }
 /* HOME PAGE ENDS */
+/* 768px */
+@media (max-width: 768px) {
+  .nav {
+    width: 100%;
+    flex-direction: column;
+  }
+  .brand {
+    padding: 0;
+    padding-bottom: 0.5rem;
+  }
+  .nav-list {
+    width: 90%;
+    border-top: whitesmoke 3px solid;
+  }
+}

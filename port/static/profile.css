@@ -113,7 +113,21 @@ input[type="radio"] {
     margin: 20px 0 10px 0;
     width: calc(100% / 2 - 10px);
   }
+  .container {
+    padding: 20px 0px;
+  }
 }
+/* 1400px */
+@media (max-width: 1400px) {
+  .main-card .cards .card {
+    background-image: linear-gradient(
+      0deg,
+      var(--bg-blue) 50%,
+      var(--bg-blue) 50%
+    );
+  }
+}
+/* 600px */
 @media (max-width: 600px) {
   .main-card .cards .card {
     /* margin: 20px 0 10px 0; */
