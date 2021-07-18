@@ -1,0 +1,41 @@
+.slider {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card {
+  background-color: transparent;
+  color: whitesmoke;
+  width: 23rem;
+  min-height: 25rem;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  border-top: whitesmoke 4px solid;
+  border-bottom: whitesmoke 4px solid;
+  border-radius: 7px;
+  box-shadow: whitesmoke 0rem 0rem 1rem;
+}
+.stack {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.stack li {
+  margin: auto 1rem;
+  font-size: 1.2rem;
+}
+.pr-name {
+  color: var(--orange);
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}

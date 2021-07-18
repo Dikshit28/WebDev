@@ -17,7 +17,7 @@
 
     <body>
         <button onclick="topFunction()" id="myBtn" title="Go to top" class='me-sm-3 mb-sm-3'>
-            <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+            <i draggable="false" class="fa fa-angle-double-up" aria-hidden="true"></i>
         </button>
         <div class="section home" id='home'>
             <div class="nav">
@@ -26,7 +26,8 @@
                     <li><a href="#about" class="nav-links">About</a></li>
                     <li><a href="#profile" class="nav-links">Profile</a></li>
                     <li><a href="#contact" class="nav-links">Contact</a></li>
-                    <li><button class="nav-but"> <i class="fa fa-bars" aria-hidden="true"></i></button></li>
+                    <li><button class="nav-but"> <i draggable="false" class="fa fa-bars"
+                                aria-hidden="true"></i></button></li>
                 </ul>
             </div>
             <div class="wrapper">
@@ -53,27 +54,27 @@
                     <ul class="icons">
                         <li>
                             <a href="https://github.com/Dikshit28" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github" aria-hidden="true"></i>
+                                <i draggable="false" class="fab fa-github" aria-hidden="true"></i>
                                 Github
                             </a>
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/in/dikshit-arora-ab9153148/" target="_blank"
                                 rel="noopener noreferrer">
-                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                <i draggable="false" class="fab fa-linkedin-in" aria-hidden="true"></i>
                                 LinkedIn
                             </a>
                         </li>
                         <li>
                             <a href="https://www.facebook.com/dikshit.arora.9/" target="_blank"
                                 rel="noopener noreferrer">
-                                <i class="fab fa-facebook" aria-hidden="true"></i>
+                                <i draggable="false" class="fab fa-facebook" aria-hidden="true"></i>
                                 Facebook
                             </a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/dikshi.28/" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                                <i draggable="false" class="fab fa-instagram" aria-hidden="true"></i>
                                 Instagram
                             </a>
                         </li>
@@ -82,38 +83,89 @@
             </div>
         </div>
         <div class="section about" id='about'>
-            <div class="ab-wrapper">
-                <div class="illus"></div>
-                <div class="experience">
-                    <div class="title">
-                        <h1>Some Technologies I've worked with</h1>
-                        <h2></h2>
-                    </div>
+            <div class="experience">
+                <div class="title">
+                    <h1 class='ab-h1'>My Experience</h1>
+                    <h2 class='ab-h2'></h2>
                     <div id="tech">
-                        <img src="./static/images/icons/python.png" alt="python" class="tech-item" />
-                        <img src="./static/images/icons/html.png" alt="html" class="tech-item" />
-                        <img src="./static/images/icons/css.png" alt="css" class="tech-item" />
-                        <img src="./static/images/icons/js.png" alt="js" class="tech-item" />
-                        <img src="./static/images/icons/java.png" alt="java" class="tech-item" />
-                        <img src="./static/images/icons/bootstrap.png" alt="bootstrap" class="tech-item" />
-                        <img src="./static/images/icons/flask.png" alt="flask" class="tech-item" />
-                        <img src="./static/images/icons/django-icon.png" alt="django" class="tech-item" />
-                        <img src="./static/images/icons/numpy.svg" alt="numpy" class="tech-item" />
-                        <img src="./static/images/icons/pandas.png" alt="pandas_white" class="tech-item" />
-                        <img src="./static/images/icons/github.png" alt="github" class="tech-item" />
-                        <img src="./static/images/icons/visual-studio-code-icon.png" alt="vs-code" class="tech-item" />
-                        <img src="./static/images/icons/photoshop.png" alt="photoshop" class="tech-item" />
+                        <p class="ab-list-text">
+                            <img alt="⚡" class='list-icon' draggable="false"
+                                src="https://twemoji.maxcdn.com/2/72x72/26a1.png" />
+                            Pursuing B.Tech in Computer Science with Data science and AI specialization from The
+                            NorthCap University, Graduating in May 2023.
+                        </p>
+                        <p class="ab-list-text">
+                            <img alt="⚡" class='list-icon' draggable="false"
+                                src="https://twemoji.maxcdn.com/2/72x72/26a1.png" />
+                            Working as a Project Manager/Event Lead for Python Warriors, a Student Intrest Group,
+                            2020-present.
+                        </p>
+                        <p class="ab-list-text">
+                            <img alt="⚡" class='list-icon' draggable="false"
+                                src="https://twemoji.maxcdn.com/2/72x72/26a1.png" />
+                            Working as webmaster at IEEE NCU TEMS SBC for the period 2021-2022.
+                        </p>
+                        <p class="ab-list-text">
+                            <img alt="⚡" class='list-icon' draggable="false"
+                                src="https://twemoji.maxcdn.com/2/72x72/26a1.png" />
+                            Got selected in the InternWell Upskilling and Mentorship Program
+                            (15th March 2021 - 15th August 2021), aimed to provide kickstart to the students.
+                        </p>
                     </div>
+                </div>
+            </div>
+            <div class="experience">
+                <div class="title">
+                    <h1 class='ab-h1'>Some Technologies I've worked with</h1>
+                    <h2 class='ab-h2'></h2>
+                </div>
+                <div id="tech">
+                    <img draggable="false" src="./static/images/icons/python.png" alt="python" class="tech-item" />
+                    <img draggable="false" src="./static/images/icons/html.png" alt="html" class="tech-item" />
+                    <img draggable="false" src="./static/images/icons/css.png" alt="css" class="tech-item" />
+                    <img draggable="false" src="./static/images/icons/js.png" alt="js" class="tech-item" />
+                    <img draggable="false" src="./static/images/icons/java.png" alt="java" class="tech-item" />
+                    <img draggable="false" src="./static/images/icons/bootstrap.png" alt="bootstrap"
+                        class="tech-item" />
+                    <img draggable="false" src="./static/images/icons/flask.png" alt="flask" class="tech-item" />
+                    <img draggable="false" src="./static/images/icons/django-icon.png" alt="django" class="tech-item" />
+                    <img draggable="false" src="./static/images/icons/numpy.svg" alt="numpy" class="tech-item" />
+                    <img draggable="false" src="./static/images/icons/pandas.png" alt="pandas_white"
+                        class="tech-item" />
+                    <img draggable="false" src="./static/images/icons/github.png" alt="github" class="tech-item" />
+                    <img draggable="false" src="./static/images/icons/visual-studio-code-icon.png" alt="vs-code"
+                        class="tech-item" />
+                    <img draggable="false" src="./static/images/icons/git-icon.png" alt="git" class="tech-item" />
                 </div>
             </div>
         </div>
         <div class="contact">
-            <div class="profile" id='profile'>portfolio</div>
+            <div class="profile" id='profile'>
+                <div class="title">
+                    <h1 class='ab-h1'>Some Technologies I've worked with</h1>
+                    <h2 class='ab-h2'></h2>
+                </div>
+                <div class="slider">
+                    <div class="card">
+                        <div class="pr-name">Attendance Telegram bot</div>
+                        <div class="small-desc">
+                            <ul class="stack">
+                                <li class="stack-item">Python</li>
+                                <li class="stack-item">Telegram-bot library</li>
+                                <li class="stack-item">Telegram API</li>
+                            </ul>
+                        </div>
+                        <div class="full-desc">A telegram bot made for students for checking attendance with just one
+                            message</div>
+                    </div>
+                </div>
+            </div>
+
             <div class="contact-me" id='contact'>
                 <div class="con-wrapper">
                     <div class="text-area">
                         <div class="con-title">
-                            Contact Me <i class="fa fa-phone" aria-hidden="true"></i>
+                            Contact Me <i draggable="false" class="fa fa-phone" aria-hidden="true"></i>
                         </div>
                         <div class="con-desc">
                             Whether you have an idea for a project or just want to chat, feel free to shoot me an email!
@@ -121,12 +173,12 @@
                         <div class="info">
                             <a href="mailto:sanju39194@gmail.com" target="_blank" rel="noopener noreferrer"
                                 class='mail'>
-                                <i class="far fa-envelope-open mail-icon"></i>
+                                <i draggable="false" class="far fa-envelope-open mail-icon"></i>
                                 sanju39194@gmail.com
                             </a>
                             <ul class="con-icons">
                                 <li><a href="https://github.com/Dikshit28" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-github" aria-hidden="true"></i>Github</a>
+                                        <i draggable="false" class="fab fa-github" aria-hidden="true"></i>Github</a>
                                 </li>
                                 <li><a href="https://www.linkedin.com/in/dikshit-arora-ab9153148/" target="_blank"
                                         rel="noopener noreferrer">
@@ -134,17 +186,18 @@
                                 </li>
                                 <li><a href="https://www.facebook.com/dikshit.arora.9/" target="_blank"
                                         rel="noopener noreferrer">
-                                        <i class="fab fa-facebook" aria-hidden="true"></i>Facebook</a>
+                                        <i draggable="false" class="fab fa-facebook" aria-hidden="true"></i>Facebook</a>
                                 </li>
                                 <li><a href="https://www.instagram.com/dikshi.28/" target="_blank"
                                         rel="noopener noreferrer">
-                                        <i class="fab fa-instagram" aria-hidden="true"></i>Instagram</a>
+                                        <i draggable="false" class="fab fa-instagram"
+                                            aria-hidden="true"></i>Instagram</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="mail-gif">
-                        <img src="./static/images/mail-without-bg.gif" alt="gifs" class='gif'>
+                        <img draggable="false" src="./static/images/mail-without-bg.gif" alt="gifs" class='gif'>
                     </div>
                 </div>
             </div>

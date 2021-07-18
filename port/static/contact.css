@@ -1,18 +1,19 @@
 .contact {
-  background-image: url(./images/bg3.jpg);
-  background-color: var(--bg-blue);
+  background-image: url(./images/bgs1.jpg);
+  background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
   position: relative;
+  width: 100vw;
+  min-height: 100vh;
 }
 .con-wrapper {
   position: relative;
   display: grid;
   width: 90%;
   margin: auto;
-  grid-template-columns: 1.3fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 .text-area {
   margin: 4rem 3rem;
@@ -112,4 +113,6 @@
   font-size: 1.2rem;
   transform: translateX(-50%);
   color: whitesmoke;
+  background-color: black;
+  padding: 0rem 2rem;
 }
