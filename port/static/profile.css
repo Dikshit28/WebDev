@@ -1,41 +1,122 @@
+.profile {
+  padding-top: 2rem;
+}
 .slider {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 60%;
+  width: 100%;
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.7);
 }
-
-.card {
-  background-color: transparent;
-  color: whitesmoke;
-  width: 23rem;
-  min-height: 25rem;
-  margin: 4rem auto;
+.container {
+  max-width: 950px;
+  width: 100%;
+  overflow: hidden;
+  padding: 80px 0;
+}
+.container .main-card {
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+#two:checked ~ .main-card {
+  margin-left: -100%;
+}
+.container .main-card .cards {
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-evenly;
+}
+.main-card .cards .card {
+  width: calc(100% / 3 - 10px);
+  background-image: linear-gradient(
+    0deg,
+    transparent 0%,
+    var(--dark-blue) 50%,
+    transparent 100%
+  );
+  border-radius: 7px;
+  padding: 30px;
+  box-shadow: 0rem 0rem 0.7rem whitesmoke;
+  transition: all 0.4s ease;
+}
+.main-card .cards .card:hover {
+  transform: translateY(-15px);
+  background-image: linear-gradient(
+    0deg,
+    var(--bg-blue) 50%,
+    var(--bg-blue) 50%
+  );
+}
+.cards .card .content {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  padding: 1rem;
-  border-top: whitesmoke 4px solid;
-  border-bottom: whitesmoke 4px solid;
-  border-radius: 7px;
-  box-shadow: whitesmoke 0rem 0rem 1rem;
+  text-align: center;
+  color: whitesmoke;
 }
-.stack {
+.card .content .name {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.card .content .job {
+  font-size: 1.3rem;
+  color: #ff676d;
+}
+.card .content .pr-stack {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin: 1rem auto;
 }
-.stack li {
-  margin: auto 1rem;
-  font-size: 1.2rem;
+.container .button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
 }
-.pr-name {
-  color: var(--orange);
-  font-size: 1.7rem;
-  font-weight: 700;
-  padding-bottom: 1rem;
+.button label {
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: rgba(245, 245, 245, 0.5);
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button label.active {
+  width: 35px;
+}
+#one:checked ~ .button .one {
+  width: 35px;
+}
+#one:checked ~ .button .two {
+  width: 15px;
+}
+#two:checked ~ .button .one {
+  width: 15px;
+}
+#two:checked ~ .button .two {
+  width: 35px;
+}
+input[type="radio"] {
+  display: none;
+}
+@media (max-width: 768px) {
+  .main-card .cards .card {
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .main-card .cards .card {
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
 }

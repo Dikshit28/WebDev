@@ -108,7 +108,7 @@
 }
 .foot {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   left: 50%;
   font-size: 1.2rem;
   transform: translateX(-50%);

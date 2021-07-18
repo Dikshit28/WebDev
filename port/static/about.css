@@ -42,7 +42,8 @@
   margin-top: 10px;
 }
 
-#tech {
+#tech,
+#tech1 {
   display: flex;
   width: 80%;
   justify-content: center;
@@ -50,7 +51,6 @@
   margin: 2rem auto;
   flex-wrap: wrap;
 }
-
 .tech-item {
   width: 60px;
   margin: 30px 20px;
