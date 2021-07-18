@@ -295,9 +295,11 @@ body {
   }
   .data {
     text-align: center;
-    padding: 0rem auto;
+    padding: 0rem;
     margin: 0rem auto;
+    margin-top: 1.5rem;
     height: max-content;
+    width: 80%;
   }
   .buts {
     margin: 3rem auto 0rem auto;
@@ -334,12 +336,48 @@ body {
     width: 100%;
     flex-direction: column;
   }
+  #mybtn {
+    display: none;
+  }
   .brand {
     padding: 0;
     padding-bottom: 0.5rem;
   }
+  .buts {
+    flex-direction: column;
+    width: 100%;
+  }
+  .home-buts {
+    margin-bottom: 1rem;
+    width: 90%;
+  }
   .nav-list {
     width: 90%;
     border-top: whitesmoke 3px solid;
+  }
+}
+/* 480px */
+@media (max-width: 480px) {
+  .icons {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .icons li {
+    margin: auto;
+  }
+  .icons a {
+    font-size: 1rem;
+  }
+  .icons i {
+    font-size: 1rem;
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+  .desc {
+    font-size: 1rem;
   }
 }

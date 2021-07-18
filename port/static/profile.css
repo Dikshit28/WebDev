@@ -109,6 +109,10 @@ input[type="radio"] {
   display: none;
 }
 @media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
   .main-card .cards .card {
     margin: 20px 0 10px 0;
     width: calc(100% / 2 - 10px);
