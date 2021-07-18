@@ -89,5 +89,10 @@
   #tech1 {
     width: 90%;
     margin: auto;
+    margin-bottom: 2rem;
+  }
+  .tech-item {
+    margin: 1rem;
+    scale: 0.85;
   }
 }
