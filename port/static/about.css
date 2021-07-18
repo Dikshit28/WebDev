@@ -81,9 +81,14 @@
   }
 }
 /* 768px */
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .experience {
     padding-top: 3rem;
     height: max-content;
+  }
+  #tech1 {
+    width: 90%;
+    margin: auto;
+    font-size: 1rem;
   }
 }
