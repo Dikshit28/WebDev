@@ -38,8 +38,8 @@ body {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 0px;
-  right: 0px;
+  bottom: 10px;
+  right: 10px;
   z-index: 99;
   border: 0.2rem whitesmoke solid;
   outline: none;
