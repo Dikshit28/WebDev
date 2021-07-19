@@ -6,7 +6,6 @@
   background-size: cover;
   position: relative;
   width: 100vw;
-  min-height: 100vh;
 }
 .con-wrapper {
   position: relative;
@@ -114,9 +113,9 @@
   transform: translateX(-50%);
   color: whitesmoke;
   background-color: black;
-  padding: 0rem 2rem;
+  padding: 0rem 4rem;
   text-align: center;
-  width: max-content;
+  width: 60%;
 }
 /* 1060px */
 @media only screen and (max-width: 1060px) {
@@ -131,7 +130,7 @@
   }
   .text-area {
     margin: auto;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
   }
   .foot {
     margin: auto;
@@ -162,5 +161,11 @@
     height: 2rem;
     width: 2rem;
     line-height: 2rem;
+  }
+}
+/* 560px */
+@media (max-width: 560px) {
+  .con-desc {
+    margin: 0.7rem auto 1.3rem auto;
   }
 }
