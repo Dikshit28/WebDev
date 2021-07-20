@@ -1,5 +1,9 @@
 .about {
-  background-image: linear-gradient(65deg, var(--claret) 50%, var(--kobi) 50%);
+  background-image: linear-gradient(
+    65deg,
+    var(--space-cadet) 50%,
+    var(--royal-blue-dark) 50%
+  );
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 100vh;
@@ -74,10 +78,10 @@
     width: 100%;
   }
   .exp1 {
-    background-color: var(--claret);
+    background-color: var(--space-cadet);
   }
   .exp2 {
-    background-color: var(--kobi);
+    background-color: var(--royal-blue-dark);
   }
   .tech-item {
     filter: grayscale(0%);

@@ -11,6 +11,9 @@
   --kobi: rgba(212, 153, 185, 1);
   --lavender-blush: rgba(255, 238, 242, 1);
   --dartmouth-green: rgba(48, 107, 52, 1);
+  --rich-black-fogra: rgba(0, 3, 8, 1);
+  --space-cadet: rgba(27, 53, 102, 1);
+  --royal-blue-dark: rgba(5, 35, 92, 1);
 }
 html {
   -ms-overflow-style: none;
@@ -191,10 +194,10 @@ body {
   bottom: 0rem;
   background: transparent;
   border-radius: 50%;
-  border-top: 4px solid var(--claret);
-  border-right: 4px solid var(--kobi);
-  border-bottom: 4px solid var(--claret);
-  border-left: 4px solid var(--kobi);
+  border-top: 4px solid var(--space-cadet);
+  border-right: 4px solid var(--royal-blue-dark);
+  border-bottom: 4px solid var(--space-cadet);
+  border-left: 4px solid var(--royal-blue-dark);
   -webkit-animation-name: Rotate;
   -webkit-animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
