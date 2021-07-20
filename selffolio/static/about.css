@@ -74,10 +74,10 @@
     width: 100%;
   }
   .exp1 {
-    background-color: var(--space-cadet);
+    background-color: var(--blue);
   }
   .exp2 {
-    background-color: var(--royal-blue-dark);
+    background-color: var(--red);
   }
   .tech-item {
     filter: grayscale(0%);
