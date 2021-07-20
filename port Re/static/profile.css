@@ -1,5 +1,20 @@
 .profile {
-  padding-top: 2rem;
+  padding-top: 3rem;
+  background-image: linear-gradient(
+    125deg,
+    transparent 0%,
+    transparent 10%,
+    var(--electric-blue) 10%,
+    var(--electric-blue) 20%,
+    transparent 20%,
+    transparent 100%
+  );
+}
+.con {
+  color: var(--lavender-blush);
+}
+.cons {
+  background-color: var(--lavender-blush);
 }
 .slider {
   display: flex;
@@ -35,12 +50,12 @@
   background-image: linear-gradient(
     0deg,
     transparent 0%,
-    var(--dark-blue) 50%,
+    var(--dartmouth-green) 50%,
     transparent 100%
   );
   border-radius: 7px;
   padding: 30px;
-  box-shadow: 0rem 0rem 0.7rem whitesmoke;
+  box-shadow: 0rem 0rem 0.7rem var(--lavender-blush);
   transition: all 0.4s ease;
 }
 .main-card .cards .card:hover {
@@ -58,7 +73,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: whitesmoke;
+  color: var(--lavender-blush);
 }
 .card .content .name {
   font-size: 2rem;

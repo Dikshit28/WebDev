@@ -1,15 +1,17 @@
 //Get the button:
 const mybutton = document.getElementById("myBtn");
-
+const home = document.getElementById("home");
+const nav = document.querySelector(".nav");
+const dist = home.clientHeight - nav.clientHeight;
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };
-console.log(document.getElementById("home").clientHeight);
-console.log(document.getElementById("home").clientWidth);
 function scrollFunction() {
-    if (document.body.scrollTop > (document.getElementById("home").clientHeight) / 2 || document.documentElement.scrollTop > (document.getElementById("home").clientHeight) / 2) {
+    if (document.body.scrollTop > dist || document.documentElement.scrollTop > dist) {
         mybutton.style.display = "block";
+        nav.style.position = "absolute";
     } else {
         mybutton.style.display = "none";
+        nav.style.position = "fixed";
     }
 }
 
