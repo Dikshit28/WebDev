@@ -11,10 +11,10 @@
   );
 }
 .con {
-  color: var(--lavender-blush);
+  color: var(--white);
 }
 .cons {
-  background-color: var(--lavender-blush);
+  background-color: var(--white);
 }
 .slider {
   display: flex;
@@ -55,7 +55,7 @@
   );
   border-radius: 7px;
   padding: 30px;
-  box-shadow: 0rem 0rem 0.7rem var(--lavender-blush);
+  box-shadow: 0rem 0rem 0.7rem var(--white);
   transition: all 0.4s ease;
 }
 .main-card .cards .card:hover {
@@ -73,7 +73,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: var(--lavender-blush);
+  color: var(--white);
 }
 .card .content .name {
   font-size: 2rem;
