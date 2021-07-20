@@ -1,5 +1,9 @@
 .about {
-  background-image: linear-gradient(65deg, var(--blue) 50%, var(--red) 50%);
+  background-image: linear-gradient(
+    65deg,
+    var(--bg-blue) 50%,
+    var(--dark-blue) 50%
+  );
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 100vh;
@@ -15,7 +19,7 @@
   margin: auto;
 }
 .ab-list-text {
-  color: var(--white);
+  color: rgba(245, 245, 245, 0.7);
   font-size: 1.5rem;
   font-weight: 600;
   margin-top: 1.3rem;
@@ -28,13 +32,13 @@
   vertical-align: -0.1em;
 }
 .ab-h1 {
-  color: black;
+  color: whitesmoke;
   text-align: center;
   font-size: 250%;
 }
 
 .ab-h2 {
-  background-color: black;
+  background-color: var(--orange-yellow-crayola);
   width: 70%;
   height: 5px;
   margin: 0 auto;
@@ -74,10 +78,10 @@
     width: 100%;
   }
   .exp1 {
-    background-color: var(--blue);
+    background-color: var(--bg-blue);
   }
   .exp2 {
-    background-color: var(--red);
+    background-color: var(--dark-blue);
   }
   .tech-item {
     filter: grayscale(0%);

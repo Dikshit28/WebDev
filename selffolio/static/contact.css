@@ -27,12 +27,12 @@
   width: 100vw;
   background-image: linear-gradient(
     121deg,
-    var(--oxford-blue) 0%,
-    var(--oxford-blue) 70%,
-    var(--dartmouth-green) 70%,
-    var(--dartmouth-green) 90%,
-    var(--oxford-blue) 90%,
-    var(--oxford-blue) 100%
+    var(--con-blue-dark) 0%,
+    var(--con-blue-dark) 70%,
+    var(--con-red-dark) 70%,
+    var(--con-red-dark) 90%,
+    var(--con-blue-dark) 90%,
+    var(--con-blue-dark) 100%
   );
 }
 .con-wrapper {
@@ -44,15 +44,16 @@
 }
 .text-area {
   margin: 4rem 3rem;
-  color: var(--white);
+  color: whitesmoke;
 }
 .con-title {
   font-size: 3rem;
   font-weight: 700;
   margin: 1.5rem auto 0rem auto;
+  color: var(--sandy-brown);
 }
 .con-title i {
-  color: var(--electric-blue);
+  color: var(--persian-green);
 }
 .con-desc {
   font-size: 1.5rem;
@@ -69,7 +70,7 @@
   color: inherit;
   font-size: 2rem;
   font-weight: 200;
-  text-shadow: 0.1rem 0.1rem 0.1rem var(--white);
+  text-shadow: 0.1rem 0.1rem 0.1rem whitesmoke;
   transition: all 0.2s ease-in;
   text-decoration: none;
 }
@@ -115,7 +116,8 @@
   animation: mov 2.5s ease-in-out 0s infinite forwards;
   cursor: pointer;
   border-radius: 50%;
-  box-shadow: var(--electric-blue) 0rem 0rem 1rem;
+  box-shadow: whitesmoke 0rem 0rem 1rem;
+  background-color: rgba(245, 245, 245, 0.7);
 }
 @keyframes mov {
   0% {
@@ -139,7 +141,7 @@
   left: 50%;
   font-size: 1.2rem;
   transform: translateX(-50%);
-  color: var(--white);
+  color: var(--persian-green);
   background-color: black;
   padding: 0rem 4rem;
   text-align: center;

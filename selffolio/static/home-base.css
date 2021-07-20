@@ -1,57 +1,8 @@
-* {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-}
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
-:root {
-  --black: #171717;
-  --grey: #444444;
-  --red: #da0037;
-  --white: #ededed;
-  --blue: #16001e;
-  --green: #56876d;
-}
-html {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
-}
-html::-webkit-scrollbar {
-  display: none;
-}
-body {
-  font-family: "Titillium Web", sans-serif;
-  overflow-x: hidden;
-  width: 100vw;
-  position: relative;
-}
-/*TO THE TOP BUTTON*/
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  z-index: 99;
-  border: 0.2rem var(--black) solid;
-  background-color: var(--red);
-  outline: none;
-  color: var(--white);
-  cursor: pointer;
-  padding: 0.7rem;
-  font-size: 1.2rem;
-  border-radius: 15px;
-}
-#myBtn:hover {
-  background-color: var(--black);
-  color: var(--red);
-  border: 0.2rem var(--red) solid;
-}
 /* NAV BAR*/
 
 .nav {
-  background-color: rgba(23, 23, 23, 0.8);
-  color: var(--red);
+  background-color: rgba(38, 70, 83, 0.7);
+  color: whitesmoke;
   width: 100%;
   top: 0%;
   left: 50%;
@@ -94,9 +45,9 @@ body {
 .nav-list li:active {
   opacity: 1;
   outline: 0;
-  background-color: var(--grey);
-  color: var(--white);
-  text-shadow: var(--white) 0.2rem 0.2rem 0.2rem;
+  background-color: var(--persian-green);
+  color: black;
+  text-shadow: rgb(39, 39, 39) 0.2rem 0.2rem 0.2rem;
 }
 /* NAV END */
 
@@ -104,14 +55,14 @@ body {
 .home {
   background-image: linear-gradient(
     130deg,
-    var(--black) 0%,
-    var(--black) 70%,
-    var(--red) 70%,
-    var(--red) 90%,
-    var(--black) 90%,
-    var(--black) 100%
+    var(--charcoal) 0%,
+    var(--charcoal) 70%,
+    var(--orange-yellow-crayola) 70%,
+    var(--orange-yellow-crayola) 90%,
+    var(--charcoal) 90%,
+    var(--charcoal) 100%
   );
-  color: var(--white);
+  color: whitesmoke;
   min-height: 100vh;
 }
 .wrapper {
@@ -148,7 +99,7 @@ body {
 }
 .buts a {
   display: flex;
-  border: var(--white) 3px solid;
+  border: var(--orange-yellow-crayola) 3px solid;
   border-radius: 3px;
   padding: 1rem 1rem;
   width: 47%;
@@ -163,8 +114,8 @@ body {
 }
 .buts a:hover {
   scale: 1.1;
-  background: var(--white);
-  color: var(--black);
+  background: var(--orange-yellow-crayola);
+  color: var(--charcoal);
 }
 .img {
   display: flex;
@@ -181,7 +132,7 @@ body {
   position: absolute;
   width: 25rem;
   border-radius: 50%;
-  background-color: rgba(245, 245, 245, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .border {
   z-index: 2;
@@ -192,10 +143,10 @@ body {
   bottom: 0rem;
   background: transparent;
   border-radius: 50%;
-  border-top: 4px solid var(--black);
-  border-right: 4px solid var(--white);
-  border-bottom: 4px solid var(--black);
-  border-left: 4px solid var(--white);
+  border-top: 4px solid var(--charcoal);
+  border-right: 4px solid var(--sandy-brown);
+  border-bottom: 4px solid var(--charcoal);
+  border-left: 4px solid var(--sandy-brown);
   -webkit-animation-name: Rotate;
   -webkit-animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
@@ -242,6 +193,7 @@ body {
   .wrapper {
     display: flex;
     flex-direction: column;
+    padding-top: 2rem;
     padding-bottom: 10rem;
   }
   .brand {
@@ -305,7 +257,7 @@ body {
   .nav-list {
     width: 90%;
     padding-top: 1rem;
-    border-top: var(--white) 3px solid;
+    border-top: var(--burnt-sienna) 3px solid;
   }
 }
 /* 560px */
@@ -318,7 +270,7 @@ body {
     padding: auto 0.5rem;
   }
   .wrapper {
-    padding-top: 6rem;
+    padding-top: 3rem;
     padding-bottom: 4rem;
   }
   .data {
@@ -341,14 +293,8 @@ body {
     right: 2.5rem;
   }
 }
-/* 400px */
-@media (max-width: 400px) {
-  .name {
-    font-size: 2rem;
-  }
-  .desc {
-    font-size: 1.2rem;
-  }
+/* 460px */
+@media (max-width: 460px) {
   .img {
     margin-top: 1rem;
     width: 100%;
@@ -358,5 +304,17 @@ body {
   }
   .border {
     display: none;
+  }
+  .wrapper {
+    padding-bottom: 1rem;
+  }
+}
+/* 400px */
+@media (max-width: 400px) {
+  .name {
+    font-size: 2rem;
+  }
+  .desc {
+    font-size: 1.2rem;
   }
 }

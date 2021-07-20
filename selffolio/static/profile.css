@@ -4,17 +4,17 @@
     125deg,
     transparent 0%,
     transparent 10%,
-    var(--electric-blue) 10%,
-    var(--electric-blue) 20%,
+    var(--orange-yellow-crayola) 10%,
+    var(--orange-yellow-crayola) 20%,
     transparent 20%,
     transparent 100%
   );
 }
 .con {
-  color: var(--white);
+  color: whitesmoke;
 }
 .cons {
-  background-color: var(--white);
+  background-color: whitesmoke;
 }
 .slider {
   display: flex;
@@ -50,12 +50,15 @@
   background-image: linear-gradient(
     0deg,
     transparent 0%,
-    var(--dartmouth-green) 50%,
+    transparent 10%,
+    var(--persian-green),
+    transparent 90%,
     transparent 100%
   );
+  border: var(--bg-blue) 1px solid;
   border-radius: 7px;
   padding: 30px;
-  box-shadow: 0rem 0rem 0.7rem var(--white);
+  box-shadow: 0rem 0rem 0.7rem var(--orange-yellow-crayola);
   transition: all 0.4s ease;
 }
 .main-card .cards .card:hover {
@@ -146,6 +149,10 @@ input[type="radio"] {
 }
 /* 600px */
 @media (max-width: 600px) {
+  .profile {
+    background-image: none;
+    background-color: transparent;
+  }
   .cards {
     margin: auto;
   }

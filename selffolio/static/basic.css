@@ -1,0 +1,54 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+:root {
+  --charcoal: rgba(38, 70, 83, 1);
+  --persian-green: rgba(42, 157, 143, 1);
+  --orange-yellow-crayola: rgba(233, 196, 106, 1);
+  --sandy-brown: rgba(244, 162, 97, 1);
+  --burnt-sienna: rgba(231, 111, 81, 1);
+  --dark-blue: #055574;
+  --bg-blue: #121b1a;
+  --con-blue: #2b2d42;
+  --con-blue-dark: #1b1e2e;
+  --con-red: #e33c3c;
+  --con-red-dark: #ef233c;
+}
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+body {
+  font-family: "Titillium Web", sans-serif;
+  overflow-x: hidden;
+  width: 100vw;
+  position: relative;
+}
+/*TO THE TOP BUTTON*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  border: 0.2rem var(--charcoal) solid;
+  background-color: var(--orange-yellow-crayola);
+  outline: none;
+  color: var(--charcoal);
+  cursor: pointer;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  border-radius: 15px;
+}
+#myBtn:hover {
+  background-color: var(--charcoal);
+  color: var(--orange-yellow-crayola);
+  border: 0.2rem var(--orange-yellow-crayola) solid;
+}
