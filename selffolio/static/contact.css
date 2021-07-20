@@ -27,12 +27,12 @@
   width: 100vw;
   background-image: linear-gradient(
     121deg,
-    var(--con-blue-dark) 0%,
-    var(--con-blue-dark) 70%,
+    var(--charcoal) 0%,
+    var(--charcoal) 70%,
     var(--con-red-dark) 70%,
     var(--con-red-dark) 90%,
-    var(--con-blue-dark) 90%,
-    var(--con-blue-dark) 100%
+    var(--charcoal) 90%,
+    var(--charcoal) 100%
   );
 }
 .con-wrapper {
