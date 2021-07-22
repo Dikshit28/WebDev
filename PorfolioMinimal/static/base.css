@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Catamaran:wght@100;200;300;400;500&display=swap");
-/* DISPLAY FONT
-* font-family: 'Bangers', cursive;
-*/
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500&display=swap");
 /* San Serif Font
 * font-family: 'Catamaran', sans-serif;
 */
@@ -20,7 +17,6 @@
 	--rich-black-fogra-29: rgba(7, 16, 19, 1);
 	--light-coral: rgba(255, 107, 108, 1);
 	--russian-violet: rgba(18, 13, 49, 1);
-	--headers: "Bangers", cursive;
 	--text: "Catamaran", sans-serif;
 	--pop: "Poppins", sans-serif;
 }
