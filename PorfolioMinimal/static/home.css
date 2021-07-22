@@ -18,6 +18,7 @@
 .brand {
 	background: -webkit-linear-gradient(var(--pink-lace), var(--cadet-blue));
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	color: whitesmoke;
 }
