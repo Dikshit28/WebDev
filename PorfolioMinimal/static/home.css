@@ -17,9 +17,11 @@
 }
 .brand {
 	background: -webkit-linear-gradient(var(--pink-lace), var(--cadet-blue));
+	background-size: 100%;
 	-webkit-background-clip: text;
-	background-clip: text;
+	-moz-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
 	color: whitesmoke;
 }
 .nav-list {
@@ -30,7 +32,6 @@
 .nav-list li {
 	background: -webkit-linear-gradient(var(--pink-lace), var(--cadet-blue));
 	background-size: 100%;
-	background-clip: text;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	-webkit-text-fill-color: transparent;
