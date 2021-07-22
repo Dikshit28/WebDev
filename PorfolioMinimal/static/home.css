@@ -1,0 +1,130 @@
+/* NAVIGATION */
+.nav {
+	background-color: rgba(7, 16, 19, 0.7);
+	color: whitesmoke;
+	width: 88%;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 99;
+	font-family: var(--pop);
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+.brand {
+	background: -webkit-linear-gradient(var(--pink-lace), var(--cadet-blue));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: whitesmoke;
+}
+.nav-list {
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+}
+.nav-list li {
+	background: -webkit-linear-gradient(var(--pink-lace), var(--cadet-blue));
+	background-size: 100%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5rem 1rem;
+	opacity: 0.5;
+}
+.nav-list li:hover,
+.nav-list li:focus,
+.nav-list li:active {
+	opacity: 1;
+	outline: 0;
+}
+.icon-list {
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+}
+.icon-list li {
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5rem 1rem;
+}
+.icon-list i {
+	font-size: 1.2rem;
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
+	margin: auto auto;
+	text-align: center;
+	line-height: 2rem;
+	transition: all 0.6s ease-in-out;
+}
+/* NAVIGATION END */
+.home {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 2rem 2rem;
+}
+.intro {
+	margin: 1rem auto 2rem auto;
+}
+.img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.my-img {
+	width: 20rem;
+	height: auto;
+	border: var(--cadet-blue) 2px solid;
+	border-radius: 50%;
+	background-color: rgba(18, 13, 49, 0.5);
+}
+.buts {
+	margin: auto;
+	padding: 0.3rem 4rem;
+	border: var(--cadet-blue) 2px solid;
+	text-decoration: none;
+	border-radius: 2rem;
+	font-weight: 600;
+}
+.buts:hover {
+	background-color: var(--cadet-blue);
+	color: var(--rich-black-fogra-29);
+}
+.list {
+	margin: 2rem auto 0rem auto;
+	list-style-type: "\1F680";
+}
+.list > li {
+	margin: 0.6rem auto;
+}
+.tech {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.tech-item {
+	width: 60px;
+	margin: 30px 20px;
+	filter: grayscale(100%);
+	transition: all 0.3s ease-in;
+}
+
+.tech-item:hover {
+	filter: grayscale(0%);
+	cursor: pointer;
+	transform: scale(1.3);
+}

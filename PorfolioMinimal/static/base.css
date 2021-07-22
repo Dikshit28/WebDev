@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Catamaran:wght@100;200;300;400;500&display=swap");
+/* DISPLAY FONT
+* font-family: 'Bangers', cursive;
+*/
+/* San Serif Font
+* font-family: 'Catamaran', sans-serif;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,800;0,900;1,400&display=swap");
+/* DISPLAY FONT
+* font-family: 'Poppins', sans-serif;
+*/
+/* TEXT GRADIENT
+* background: -webkit-linear-gradient(#eee, #333);
+* -webkit-background-clip: text;
+* -webkit-text-fill-color: transparent;
+*/
+:root {
+	--pink-lace: rgba(240, 211, 247, 1);
+	--cadet-blue: rgba(99, 159, 171, 1);
+	--rich-black-fogra-29: rgba(7, 16, 19, 1);
+	--light-coral: rgba(255, 107, 108, 1);
+	--russian-violet: rgba(18, 13, 49, 1);
+	--headers: "Bangers", cursive;
+	--text: "Catamaran", sans-serif;
+	--pop: "Poppins", sans-serif;
+}
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+}
+html {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+	display: none;
+}
+body {
+	background-color: var(--rich-black-fogra-29);
+	overflow-x: hidden;
+	position: relative;
+}
+.container {
+	width: 85%;
+	margin: auto;
+	padding-top: 9rem;
+}
+/*TO THE TOP BUTTON*/
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 99;
+	border: 0.2rem var(--cadet-blue) solid;
+	background-color: var(--rich-black-fogra-29);
+	outline: none;
+	color: var(--cadet-blue);
+	cursor: pointer;
+	padding: 0.7rem;
+	font-size: 1.2rem;
+	border-radius: 15px;
+}
+#myBtn:hover {
+	background-color: var(--cadet-blue);
+	color: var(--rich-black-fogra-29);
+	border: 0.2rem var(--cadet-blue) solid;
+}
+
+.fab {
+	color: white;
+	transition: all 0.5s;
+}
+.fa-linkedin-in {
+	background-color: #0e76a8;
+}
+.fa-github {
+	background-color: #333;
+}
+.fa-facebook {
+	background-color: #3b5998;
+}
+.fa-instagram {
+	background-color: #bc2a8d;
+}
+.fa-github:hover,
+.fa-linkedin-in:hover,
+.fa-facebook:hover,
+.fa-instagram:hover {
+	cursor: pointer;
+	background: transparent;
+	transform: scale(1.5);
+}
+.grad-head {
+	background-image: linear-gradient(
+		var(--light-coral) 0%,
+		var(--light-coral) 40%,
+		var(--pink-lace) 60%,
+		var(--pink-lace) 100%
+	);
+	font-family: var(--pop);
+	font-size: 4rem;
+	font-weight: 600;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+	display: inline-block;
+}
+.para {
+	font-family: var(--text);
+	color: var(--cadet-blue);
+	font-size: 1.4rem;
+}
+.icons {
+	font-size: 3rem;
+	display: inline;
+}
+.grad-line {
+	width: 4rem;
+	height: 0.3rem;
+	margin-bottom: 1rem;
+	background-image: repeating-linear-gradient(
+		45deg,
+		var(--light-coral),
+		var(--pink-lace),
+		var(--cadet-blue)
+	);
+	border-radius: 20rem;
+	border: none;
+}
+.sec {
+	margin-top: 5rem;
+}
