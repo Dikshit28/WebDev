@@ -1,0 +1,151 @@
+/* 1000px */
+@media (max-width: 1000px) {
+	.nav {
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	.nav-list {
+		order: 3;
+	}
+	.home {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		gap: 1rem 0rem;
+		text-align: center;
+	}
+	.tech-item {
+		filter: grayscale(0%);
+	}
+}
+/* 960px */
+@media (max-width: 960px) {
+	.ilus {
+		display: none;
+	}
+	.contact {
+		grid-template-columns: 1fr;
+	}
+	.con-list {
+		text-align: center;
+	}
+}
+/* 600px */
+@media (max-width: 600px) {
+	.mail a {
+		padding: 0.4rem;
+		font-size: 1rem;
+	}
+	.para {
+		font-size: 1.2rem;
+	}
+	.grad-head {
+		font-size: 3rem;
+	}
+	.buts {
+		background-color: var(--cadet-blue);
+		color: var(--rich-black-fogra-29);
+	}
+	.con-list li {
+		margin: 1.4rem auto;
+	}
+	.my-img {
+		transform: scale(0.8);
+	}
+	.home {
+		display: flex;
+		flex-direction: column;
+	}
+}
+/* 500px */
+@media (max-width: 500px) {
+	.grad-head {
+		font-size: 2.5rem;
+	}
+	.tech-item {
+		transform: scale(0.8);
+		margin: 10px 15px;
+	}
+	.tech-item:hover {
+		transform: scale(1);
+	}
+	.container {
+		padding-top: 7rem;
+	}
+	.nav {
+		font-size: 1.2rem;
+	}
+	.icon-list i {
+		font-size: 1rem;
+		height: 1.5rem;
+		width: 1.5rem;
+		line-height: 1.5rem;
+	}
+}
+/* 425px */
+@media (max-width: 425px) {
+	.nav {
+		font-size: 1rem;
+		width: 100%;
+	}
+	.grad-head {
+		font-size: 2rem;
+	}
+	.para {
+		font-size: 1rem;
+	}
+	.container {
+		padding-top: 6.5rem;
+	}
+	#myBtn {
+		padding: 0.4rem;
+		font-size: 1rem;
+		bottom: 20px;
+		right: 5px;
+	}
+	.container {
+		width: 93%;
+	}
+	.list {
+		list-style: none;
+		list-style-type: none;
+	}
+}
+/* 375px */
+@media (max-width: 375px) {
+	.grad-head {
+		font-size: 1.7rem;
+	}
+	.para {
+		font-size: 0.8rem;
+	}
+	.tech-item {
+		transform: scale(0.6);
+		margin: 5px;
+	}
+	.nav {
+		flex-direction: column;
+		justify-content: center;
+		font-size: 0.8rem;
+	}
+	.icon-list i {
+		font-size: 0.8rem;
+		height: 1.2rem;
+		width: 1.2rem;
+		line-height: 1.3rem;
+	}
+	.con-list li {
+		margin: 1rem auto;
+	}
+	.img {
+		height: max-content;
+	}
+	.my-img {
+		transform: scale(0.7);
+	}
+	.home {
+		min-height: max-content;
+	}
+	.sec {
+		margin-top: 0rem;
+	}
+}

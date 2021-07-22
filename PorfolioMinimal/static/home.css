@@ -1,6 +1,6 @@
 /* NAVIGATION */
 .nav {
-	background-color: rgba(7, 16, 19, 0.7);
+	background-color: rgba(7, 16, 19, 0.8);
 	color: whitesmoke;
 	width: 88%;
 	top: 0%;
@@ -98,10 +98,13 @@
 	text-decoration: none;
 	border-radius: 2rem;
 	font-weight: 600;
+	position: relative;
+	transition: left 0.6s ease-in;
 }
 .buts:hover {
 	background-color: var(--cadet-blue);
 	color: var(--rich-black-fogra-29);
+	transform: translateX(1rem);
 }
 .list {
 	margin: 2rem auto 0rem auto;
@@ -120,11 +123,53 @@
 	width: 60px;
 	margin: 30px 20px;
 	filter: grayscale(100%);
-	transition: all 0.3s ease-in;
+	transition: transform 0.3s ease-in, filter 0.3s ease-in;
 }
 
 .tech-item:hover {
 	filter: grayscale(0%);
 	cursor: pointer;
 	transform: scale(1.3);
+}
+.contact {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	gap: 1rem 1rem;
+}
+.mail {
+	text-align: center;
+}
+.mail p a {
+	font-family: var(--pop);
+}
+.con-list {
+	list-style: none;
+}
+.con-list > li {
+	margin: 3rem auto;
+}
+.icon-con {
+	justify-content: center;
+}
+.ilus {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+.ilustration {
+	width: 100%;
+	height: auto;
+}
+footer {
+	width: 85%;
+	position: absolute;
+	bottom: 2px;
+	text-align: center;
+	font-size: 1rem;
+	color: var(--pink-lace);
+	margin: 0.5rem auto;
+}
+footer a {
+	color: var(--light-coral);
+	text-decoration: none;
 }
