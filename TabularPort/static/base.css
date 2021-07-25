@@ -38,38 +38,37 @@ html::-webkit-scrollbar {
 html,
 body {
 	background-color: var(--rich-black-fogra-29);
-	overflow-x: hidden;
 	position: relative;
+	overflow-x: hidden;
+}
+body {
 	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem 0rem;
 }
 .container {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	overflow-x: hidden;
+	position: relative;
+	width: 90%;
+	min-height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: var(--light-coral) 2px solid;
+	box-shadow: var(--light-coral) 0px 0px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.sec {
 	width: 85%;
-	margin: auto;
-	padding-top: 9rem;
-	padding-bottom: 4rem;
+	margin: 2rem auto;
 }
-/*TO THE TOP BUTTON*/
-#myBtn {
-	display: none;
-	position: fixed;
-	bottom: 10px;
-	right: 10px;
-	z-index: 99;
-	border: 0.2rem var(--cadet-blue) solid;
-	background-color: var(--rich-black-fogra-29);
-	outline: none;
-	color: var(--cadet-blue);
-	cursor: pointer;
-	padding: 0.7rem;
-	font-size: 1.2rem;
-	border-radius: 15px;
-}
-#myBtn:hover {
-	background-color: var(--cadet-blue);
-	color: var(--rich-black-fogra-29);
-	border: 0.2rem var(--cadet-blue) solid;
-}
-
 .fab {
 	color: white;
 	transition: all 0.5s;
@@ -116,10 +115,6 @@ body {
 	color: var(--cadet-blue);
 	font-size: 1.4rem;
 }
-.icons {
-	font-size: 3rem;
-	display: inline;
-}
 .grad-line {
 	width: 5rem;
 	height: 0.5rem;
@@ -133,7 +128,7 @@ body {
 	border-radius: 20rem;
 	border: none;
 }
-.sec {
-	margin-top: 2rem;
-	padding-top: 2rem;
+.icons {
+	font-size: 3rem;
+	display: inline;
 }
