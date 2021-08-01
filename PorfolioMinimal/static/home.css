@@ -116,7 +116,7 @@
 	list-style-type: "\1F680";
 }
 .list > li {
-	margin: 0.6rem auto;
+	margin: 1.5rem auto;
 }
 .tech {
 	display: flex;

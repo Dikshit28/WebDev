@@ -154,6 +154,9 @@
 	.my-img {
 		transform: scale(0.7);
 	}
+	.container {
+		padding-top: 10rem;
+	}
 	.home {
 		min-height: max-content;
 	}
