@@ -22,43 +22,26 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-// SLIDER
-const cards = document.querySelectorAll(".card");
-const next = document.getElementById("next");
-const prev = document.getElementById("prev");
-let i = 1;
-console.log(cards, next, prev);
-function slider(button) {
-    if (button === "next") {
-        if (i === 1) {
-            cards[2].classList.remove("viewer-r");
-            cards[3].classList.remove("viewer-l");
-            cards[0].classList.add("viewer-r");
-            cards[1].classList.add("viewer-l");
-            i = 3;
+const faders = document.querySelectorAll(".fader");
+const appearOptions = {
+    threshold: 0,
+};
+
+const appearOnScroll = new IntersectionObserver(function (
+    entries,
+    appearOnScroll
+) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            entry.target.classList.add("appear");
+            appearOnScroll.unobserve(entry.target);
         }
-        else {
-            cards[2].classList.add("viewer-r");
-            cards[3].classList.add("viewer-l");
-            cards[0].classList.remove("viewer-r");
-            cards[1].classList.remove("viewer-l");
-            i = 1;
-        }
-    }
-    else if (button === "prev") {
-        if (i === 3) {
-            cards[2].classList.add("viewer-r");
-            cards[3].classList.add("viewer-l");
-            cards[0].classList.remove("viewer-r");
-            cards[1].classList.remove("viewer-l");
-            i = 1;
-        }
-        else {
-            cards[2].classList.remove("viewer-r");
-            cards[3].classList.remove("viewer-l");
-            cards[0].classList.add("viewer-r");
-            cards[1].classList.add("viewer-l");
-            i = 3;
-        }
-    }
-}
+    });
+},
+    appearOptions);
+
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+});

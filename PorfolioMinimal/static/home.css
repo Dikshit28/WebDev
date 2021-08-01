@@ -1,6 +1,6 @@
 /* NAVIGATION */
 .nav {
-	background-color: rgba(7, 16, 19, 0.8);
+	background-color: rgba(7, 16, 19, 1);
 	color: whitesmoke;
 	width: 88%;
 	top: 0%;
@@ -13,17 +13,13 @@
 	z-index: 99;
 	font-family: var(--pop);
 	font-weight: 600;
-	font-size: 1.7rem;
-	padding-top: 0.5rem;
+	font-size: 1.2rem;
+	padding: 0.3rem 0rem;
 }
 .brand {
-	background: -webkit-linear-gradient(var(--pink-lace), var(--cadet-blue));
-	background-size: 100%;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-text-fill-color: transparent;
-	color: whitesmoke;
+	width: 7rem;
+	height: auto;
+	display: inline-block;
 }
 .nav-list {
 	list-style: none;
@@ -41,7 +37,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 0.5rem 1rem;
+	padding: 0rem 1rem 0rem 0rem;
 	opacity: 0.5;
 }
 .nav-list li:hover,
@@ -187,4 +183,19 @@ footer {
 footer a {
 	color: var(--light-coral);
 	text-decoration: none;
+}
+
+.fader {
+	transition: opacity 0.5s ease-in, transform 1s ease-in-out;
+	opacity: 0;
+}
+.fade-L {
+	transform: translate(-50%, 0%);
+}
+.fade-R {
+	transform: translate(50%, 0%);
+}
+.fader.appear {
+	opacity: 1;
+	transform: translate(0%, 0%);
 }
