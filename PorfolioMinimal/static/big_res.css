@@ -27,6 +27,19 @@
 	}
 	.con-list {
 		text-align: center;
+		width: 90%;
+		margin: auto;
+		margin-bottom: 1rem;
+		padding: 2rem 1rem;
+	}
+	.mail {
+		font-size: 1rem;
+	}
+	.con-list i {
+		font-size: 1.3rem;
+		height: 2.1rem;
+		width: 2.1rem;
+		line-height: 2.1rem;
 	}
 }
 /* 600px */
@@ -54,6 +67,15 @@
 	.home {
 		display: flex;
 		flex-direction: column;
+	}
+	.con-list {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		padding: 1rem;
+	}
+	.mail-item {
+		order: 5;
 	}
 }
 /* 500px */
@@ -174,11 +196,20 @@
 @media (max-width: 300px) {
 	.grad-head {
 		font-size: 1.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	.para {
-		font-size: 0.5rem;
+		font-size: 0.8rem;
+		text-align: center;
 	}
 	.my-img {
-		transform: scale(0.5);
+		transform: scale(0.6);
+	}
+	.grad-line {
+		margin: auto;
+		width: 70%;
+		margin-bottom: 0.5rem;
 	}
 }

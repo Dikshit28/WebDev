@@ -10,7 +10,7 @@
 	border: 5px solid var(--cadet-blue);
 	background-color: var(--dark-cadet-blue);
 	margin: 1rem 2rem;
-	width: 30%;
+	width: 40%;
 	border-radius: 7px;
 	padding: 1rem 1rem;
 	transition: all 0.5s;
@@ -54,37 +54,41 @@ h3 {
 		justify-content: space-evenly;
 	}
 	.card {
-		margin: 0rem 0rem;
-		width: 40%;
+		margin: 1rem 0rem;
 	}
 }
 /* 768px */
 @media (max-width: 768px) {
 	.cards {
 		flex-direction: column;
+		align-items: center;
+		margin: 3rem 0rem 1rem 0rem;
 	}
 	.card {
 		margin: 1rem 0rem;
-		width: 55%;
+		width: 80%;
+	}
+	.card:hover {
+		transform: scale(1);
 	}
 }
 /* 640px */
 @media (max-width: 640px) {
 	.card {
-		width: 70%;
+		width: 90%;
 	}
 }
 /* 500px */
 @media (max-width: 500px) {
+	.cards {
+		margin: 2rem 0rem 1rem 0rem;
+	}
 	.card {
-		width: 80%;
+		width: 95%;
 	}
 }
 /* 400px */
 @media (max-width: 400px) {
-	.card {
-		width: 90%;
-	}
 	h3 {
 		font-size: 170%;
 	}
