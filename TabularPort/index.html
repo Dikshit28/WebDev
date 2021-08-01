@@ -17,15 +17,8 @@
     </head>
 
     <body>
-        <div class="container">
-            <header class="nav">
-                <a href="#home" class="brand">DeeAyy</a>
-                <ul class="nav-list">
-                    <li><button class="links">About</button></li>
-                    <li><button class="links">Experience</button></li>
-                    <li><button class="links">Skills</button></li>
-                    <li><button class="links">Contact</button></li>
-                </ul>
+        <header class="nav-bar">
+            <nav>
                 <ul class="icon-list">
                     <li>
                         <a href="https://github.com/Dikshit28" target="_blank" rel="noopener noreferrer">
@@ -49,31 +42,199 @@
                         </a>
                     </li>
                 </ul>
-            </header>
-            <div class="swapper">
-                <div class="home sec" id="home">
-                    <div class="des">
-                        <div class="head">
-                            <p class="grad-head">Hi</p>
-                            <div class="icons">👋</div>
-                            <p class="grad-head">I'm Dikshit,</p>
-                            <hr class="grad-line">
-                        </div>
-                        <p class="para intro">
-                            An engineering student 👨‍🎓 with a dream to chase🏃, a path to follow 🛣️, and
-                            determination
-                            to move forward ➡️. I love creative things such as problem-solving 🧮, graphic and video
-                            editing 📝and ofcourse programming👨‍💻
+                <a href="#home"><img src="./static/images/blue_Logo-removebg-preview.png" alt="brand" class="brand"></a>
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="side-nav">
+            <ul class="side-nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="sec home" id="home">
+                <img src="./static/images/33_Rock04.png" alt="hand" class="hand" draggable="false">
+                <div class="divider fader fade-R">
+                    <div class="intro">
+                        <h1 class="heading">Hi I'm Dikshit</h1>
+                        <p class="para">
+                            An engineering student with knack for creative problem solving
+                            <br>
+                            and enthusiasm for playing around with different tech and tools
                         </p>
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class='buts para'>Resume</a>
-                    </div>
-                    <div class="img">
-                        <img src="./static/images/circle-cropped.png" alt="My-img" class='my-img'>
+                        <div class="buts">
+                            <a href="#contact" class="button">Get in Touch</a>
+                            <a href="#resume" class="button">See my Résume</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <script src="./script/app.js"></script>
+            <div class="sec about" id="about">
+                <div class="divider fader fade-L">
+                    <p class="head-right">About Me</p>
+                    <ul class="list">
+                        <li class="list-item">
+                            <p class="para">
+                                Pursuing B.Tech in Computer Science with Data science and AI specialization from The
+                                NorthCap University, Graduating in May 2023.
+                            </p>
+                        </li>
+                        <li class="list-item">
+                            <p class="para">
+                                Working as a Project Manager/Event Lead for Python Warriors, a Student Intrest Group,
+                                2020-present.
+                            </p>
+                        </li>
+                        <li class="list-item">
+                            <p class="para">
+                                Working as webmaster at IEEE NCU TEMS SBC for the period 2021-2022.
+                            </p>
+                        </li>
+                        <li class="list-item">
+                            <p class="para">
+                                Got selected in the InternWell Upskilling and Mentorship Program
+                                (15th March 2021 - 15th August 2021), aimed to provide kickstart to the students.
+                            </p>
+                        </li>
+                        <li class="list-item">
+                            <p class="para">
+                                More to come :)
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sec fader skills" id="skills">
+                <img src="./static/images/29_Handwithphone04withlogo.png" alt="phone" class="phone" draggable="false">
+                <div class="divider fader fade-R">
+                    <p class="head-left">My Tech&nbsp;Stack</p>
+                    <p class="para">
+                        I've worked with multiple technologies as a developer to create my projects.
+                    </p>
+                    <div class="tech">
+                        <img draggable="false" src="./static/images/icons/python.png" alt="python" class="tech-item" />
+                        <img draggable="false" src="./static/images/icons/html.png" alt="html" class="tech-item" />
+                        <img draggable="false" src="./static/images/icons/css.png" alt="css" class="tech-item" />
+                        <img draggable="false" src="./static/images/icons/js.png" alt="js" class="tech-item" />
+                        <img draggable="false" src="./static/images/icons/java.png" alt="java" class="tech-item" />
+                        <img draggable="false" src="./static/images/icons/bootstrap.png" alt="bootstrap"
+                            class="tech-item" />
+                        <img draggable="false" src="./static/images/icons/flaskwhite.png" alt="flask"
+                            class="tech-item" />
+                        <img draggable="false" src="./static/images/icons/django-icon.png" alt="django"
+                            class="tech-item" />
+                        <img draggable="false" src="./static/images/icons/numpy.svg" alt="numpy" class="tech-item" />
+                        <img draggable="false" src="./static/images/icons/pandas_white.svg" alt="pandas_white"
+                            class="tech-item" />
+                        <img draggable="false" src="./static/images/icons/github.png" alt="github" class="tech-item" />
+                        <img draggable="false" src="./static/images/icons/visual-studio-code-icon.png" alt="vs-code"
+                            class="tech-item" />
+                        <img draggable="false" src="./static/images/icons/git-icon.png" alt="git" class="tech-item" />
+                    </div>
+                </div>
+            </div>
+            <div class="project fader sec" id="projects"><img src="./static/images/1_Thumbsup04.png" alt="thumb"
+                    class="thumb">
+                <img src="./static/images/4_Victoryhand04.png" alt="victory" class="victory" draggable="false">
+                <div class="divider fader fade-L">
+                    <p class="head-right">My Projects</p>
+                    <div class="cards">
+                        <div class="card">
+                            <h3>One</h3>
+                            <p class="pr-desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iste nam voluptatum, ipsum
+                                eius dicta.
+                            </p>
+                            <div class="stack">
+                                <img src="./static/images/icons/python.png" alt="photoshop" draggable="false">
+                                <img src="./static/images/icons/numpy.svg" alt="illustrator" draggable="false">
+                                <img src="./static/images/icons/pandas_white.svg" alt="xd" draggable="false">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3>Two</h3>
+                            <p class="pr-desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iste nam voluptatum, ipsum
+                                eius dicta.
+                            </p>
+                            <div class="stack">
+                                <img src="./static/images/icons/python.png" alt="photoshop" draggable="false">
+                                <img src="./static/images/icons/numpy.svg" alt="illustrator" draggable="false">
+                                <img src="./static/images/icons/pandas_white.svg" alt="xd" draggable="false">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3>Three</h3>
+                            <p class="pr-desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iste nam voluptatum, ipsum
+                                eius dicta.
+                            </p>
+                            <div class="stack">
+                                <img src="./static/images/icons/python.png" alt="photoshop" draggable="false">
+                                <img src="./static/images/icons/numpy.svg" alt="illustrator" draggable="false">
+                                <img src="./static/images/icons/pandas_white.svg" alt="xd" draggable="false">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3>Four</h3>
+                            <p class="pr-desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iste nam voluptatum, ipsum
+                                eius dicta.
+                            </p>
+                            <div class="stack">
+                                <img src="./static/images/icons/python.png" alt="photoshop" draggable="false">
+                                <img src="./static/images/icons/numpy.svg" alt="illustrator" draggable="false">
+                                <img src="./static/images/icons/pandas_white.svg" alt="xd" draggable="false">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <div class="contact fader fade-R" id="contact">
+                        <p class="heading">Say Hi!</p>
+                        <p class="para">
+                            Remember It's Good to Talk&nbsp;:p
+                        </p>
+                        <ul class="icon-list con-list">
+                            <li><a href="mailto:sanju39194@gmail.com" class="mail">sanju39194@gmail.com</a></li>
+                            <li>
+                                <a href="https://github.com/Dikshit28" target="_blank" rel="noopener noreferrer">
+                                    <i draggable="false" class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/dikshit-arora-ab9153148/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/dikshit.arora.9/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i draggable="false" class="fab fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/dikshi.28/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i draggable="false" class="fab fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <footer>Made with <i class="fa fa-heart" aria-hidden="true"></i> by Dikshit</footer>
+            </div>
+            <script src="./script/app.js"></script>
     </body>
 
 </html>

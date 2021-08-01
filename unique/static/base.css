@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600&display=swap");
+/* San Serif Font
+* font-family: 'Catamaran', sans-serif;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+/* DISPLAY FONT
+* font-family: 'Poppins', sans-serif;
+*/
+/* TEXT GRADIENT
+* background: -webkit-linear-gradient(#eee, #333);
+* -webkit-background-clip: text;
+* -webkit-text-fill-color: transparent;
+*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--pink-lace: rgba(240, 211, 247, 1);
+	--cadet-blue: rgba(99, 159, 171, 1);
+	--dark-cadet-blue: rgb(61, 104, 114);
+	--rich-black-fogra-29: rgba(7, 16, 19, 1);
+	--light-rich-black-fogra-29: rgb(13, 30, 36);
+	--light-coral: rgba(255, 107, 108, 1);
+	--russian-violet: rgba(18, 13, 49, 1);
+	--text: "Catamaran", sans-serif;
+	--pop: "Poppins", sans-serif;
+}
+html {
+	-ms-overflow-style: none;
+	scroll-behavior: smooth;
+}
+html,
+body {
+	overflow-x: hidden;
+}
+body {
+	font-family: "Lato", sans-serif;
+	background-color: #333;
+	color: #222;
+	overflow-x: hidden;
+	margin: 0;
+}
+
+.container {
+	background-color: #fafafa;
+	transform-origin: top left;
+	transition: transform 0.5s linear;
+	width: 100vw;
+	min-height: 100vh;
+	padding: 50px;
+}
+/* NAVBAR */
+.container.show-nav {
+	transform: rotate(-20deg);
+}
+
+.circle-container {
+	position: fixed;
+	top: -100px;
+	left: -100px;
+}
+
+.circle {
+	background-color: #ff7979;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	position: relative;
+	transition: transform 0.5s linear;
+}
+
+.container.show-nav .circle {
+	transform: rotate(-76deg);
+}
+
+.circle button {
+	cursor: pointer;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	height: 100px;
+	background: transparent;
+	border: 0;
+	font-size: 26px;
+	color: #fff;
+}
+
+.circle button:focus {
+	outline: none;
+}
+
+.circle button#open {
+	left: 60%;
+}
+
+.circle button#close {
+	top: 60%;
+	transform: rotate(90deg);
+	transform-origin: top left;
+}
+
+.container.show-nav + nav li {
+	transform: translateX(0);
+	transition-delay: 0.3s;
+}
+
+nav {
+	position: fixed;
+	bottom: 40px;
+	left: 0;
+	z-index: 100;
+}
+
+nav ul {
+	list-style-type: none;
+	padding-left: 30px;
+}
+
+nav ul li {
+	text-transform: uppercase;
+	color: #fff;
+	margin: 40px 0;
+	transform: translateX(-100%);
+	transition: transform 0.4s ease-in;
+}
+
+nav ul li i {
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+nav ul li + li {
+	margin-left: 15px;
+	transform: translateX(-150%);
+}
+
+nav ul li + li + li {
+	margin-left: 30px;
+	transform: translateX(-200%);
+}
+.nav-link {
+	font: inherit;
+	color: inherit;
+}
