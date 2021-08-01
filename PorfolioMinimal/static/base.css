@@ -19,6 +19,7 @@
 	--light-rich-black-fogra-29: rgb(13, 30, 36);
 	--light-coral: rgba(255, 107, 108, 1);
 	--russian-violet: rgba(18, 13, 49, 1);
+	--white: #f9fef7;
 	--text: "Catamaran", sans-serif;
 	--pop: "Poppins", sans-serif;
 }
@@ -85,6 +86,9 @@ body {
 }
 .fa-instagram {
 	background-color: #bc2a8d;
+}
+.fa-heart {
+	color: red;
 }
 .fa-github:hover,
 .fa-linkedin-in:hover,
