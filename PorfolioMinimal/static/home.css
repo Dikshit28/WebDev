@@ -176,6 +176,19 @@
 .ilustration {
 	width: 80%;
 	height: auto;
+	transform-origin: bottom center;
+	animation: phone-move 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite;
+}
+@keyframes phone-move {
+	0% {
+		transform: rotate(-10deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(-10deg);
+	}
 }
 footer {
 	width: 85%;
@@ -200,6 +213,9 @@ footer a {
 }
 .fade-R {
 	transform: translate(50%, 0%);
+}
+.fade-Up {
+	transform: translate(0%, 50%);
 }
 .fader.appear {
 	opacity: 1;
