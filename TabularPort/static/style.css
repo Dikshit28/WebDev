@@ -16,8 +16,13 @@
 }
 .fader {
 	transition: opacity 0.5s ease-in, transform 1s ease-in-out;
-	transform: translate(0%, 50%);
 	opacity: 0;
+}
+.fade-L {
+	transform: translate(-50%, 0%);
+}
+.fade-R {
+	transform: translate(50%, 0%);
 }
 .fader.appear {
 	opacity: 1;
@@ -235,6 +240,8 @@
 }
 .contact {
 	padding: 5rem 0rem 5rem 0rem;
+}
+.con-info {
 	display: flex;
 	justify-content: center;
 	align-items: center;
