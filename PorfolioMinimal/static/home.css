@@ -81,7 +81,7 @@
 	position: relative;
 }
 .intro {
-	margin: 1rem auto 2rem auto;
+	margin: 1rem auto 3rem auto;
 }
 .img {
 	display: flex;
@@ -112,11 +112,11 @@
 	margin-left: 1rem;
 }
 .list {
-	margin: 2rem auto 0rem auto;
+	margin: 2rem auto 2rem auto;
 	list-style-type: "\1F680";
 }
 .list > li {
-	margin: 1.5rem auto;
+	margin: 1.5rem auto 0rem auto;
 }
 .tech {
 	display: flex;
@@ -141,9 +141,6 @@
 	grid-template-columns: 1.5fr 1fr;
 	gap: 1rem 1rem;
 }
-.details .para {
-	margin: 1rem 0rem 3rem;
-}
 .mail {
 	text-align: center;
 	text-decoration: none;
@@ -151,15 +148,18 @@
 	font-family: var(--pop);
 	font-size: 1.5rem;
 }
-.mail:hover {
+.mail:hover,
+.mail:focus {
 	text-shadow: #191970 10px 10px 20px, var(--dark-cadet-blue) 0px 0px 20px;
 	transform: scale(1.1);
 	cursor: pointer;
+	outline: 0;
 }
 .con-list {
 	list-style: none;
 	background-color: var(--light-rich-black-fogra-29);
 	padding: 2rem;
+	margin-bottom: 1rem;
 	border-radius: 12px;
 }
 .con-list i {
@@ -174,7 +174,11 @@
 	align-items: center;
 }
 .ilustration {
-	width: 80%;
+	position: absolute;
+	bottom: 0%;
+	left: 10%;
+	transform: translate(0%, 0%);
+	width: 72%;
 	height: auto;
 	transform-origin: bottom center;
 	animation: phone-move 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite;

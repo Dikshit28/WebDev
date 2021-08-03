@@ -1,15 +1,15 @@
 .cards {
 	display: flex;
-	align-items: space-evenly;
+	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	margin: 4rem 0rem 2rem 0rem;
+	margin: 1.5rem 0rem 2rem 0rem;
 }
 
 .card {
 	border: 5px solid var(--cadet-blue);
 	background-color: var(--dark-cadet-blue);
-	margin: 1rem 2rem;
+	margin: 1.5rem 1.5rem;
 	width: 40%;
 	border-radius: 7px;
 	padding: 1rem 1rem;
