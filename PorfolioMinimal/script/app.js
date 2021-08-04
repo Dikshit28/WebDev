@@ -25,7 +25,7 @@ function topFunction() {
 const faders = document.querySelectorAll(".fader");
 const appearOptions = {
     threshold: 0,
-    rootMargin: '0px 0px 0px 0px',
+    rootMargin: '0px -50px 0px 0px',
 };
 
 const appearOnScroll = new IntersectionObserver(function (
@@ -34,10 +34,9 @@ const appearOnScroll = new IntersectionObserver(function (
 ) {
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
-            return;
+            entry.target.classList.remove("appear");
         } else {
             entry.target.classList.add("appear");
-            appearOnScroll.unobserve(entry.target);
         }
     });
 },
