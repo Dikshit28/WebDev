@@ -25,7 +25,7 @@ function topFunction() {
 const faders = document.querySelectorAll(".fader");
 const appearOptions = {
     threshold: 0,
-    rootMargin: '0px -50px 0px 0px',
+    rootMargin: '-100px -100px 0px 0px',
 };
 
 const appearOnScroll = new IntersectionObserver(function (
