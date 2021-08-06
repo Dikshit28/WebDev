@@ -9,7 +9,7 @@
 .card {
 	border: 5px solid var(--cadet-blue);
 	background-color: var(--dark-cadet-blue);
-	width: 95%;
+	width: 90%;
 	margin: auto;
 	height: 100%;
 	border-radius: 7px;
@@ -18,14 +18,41 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	position: relative;
 }
-
+.cover {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	transition: top 0.5s;
+}
+.git {
+	opacity: 0;
+	color: var(--cadet-blue);
+	position: relative;
+}
+.git i {
+	font-size: 2rem;
+}
+.disable {
+	pointer-events: none;
+	color: var(--dark-cadet-blue);
+}
 .card:hover {
 	box-shadow: 2px 2px 15px rgb(61, 104, 114, 1), -1px -1px 10px rgba(0, 0, 0, 1);
-	transform: scale(1.1);
-	cursor: pointer;
 }
-
+.card:hover .cover {
+	background-color: rgba(7, 16, 19, 0.7);
+	top: 0;
+}
+.card:hover .git {
+	opacity: 1;
+}
 h3 {
 	font-family: var(--pop);
 	text-align: center;
