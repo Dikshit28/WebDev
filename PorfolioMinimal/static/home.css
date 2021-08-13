@@ -48,6 +48,7 @@
 }
 .nav a {
 	text-decoration: none;
+	cursor: pointer;
 }
 .icon-list {
 	list-style: none;

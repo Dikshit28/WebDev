@@ -36,6 +36,9 @@ html {
 html::-webkit-scrollbar {
 	display: none;
 }
+a {
+	cursor: pointer;
+}
 html,
 body {
 	background-color: var(--rich-black-fogra-29);
