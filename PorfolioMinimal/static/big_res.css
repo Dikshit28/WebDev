@@ -13,8 +13,13 @@
 		gap: 1rem 0rem;
 		text-align: center;
 	}
+	.nav-list li {
+		opacity: 1;
+		transform: rotate(0deg);
+	}
 	.tech-item {
 		filter: grayscale(0%);
+		transform: rotate(0deg);
 	}
 	.intro {
 		margin: 1.5rem auto 2.5rem auto;
