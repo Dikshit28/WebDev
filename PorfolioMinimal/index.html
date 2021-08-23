@@ -41,7 +41,7 @@
             <i draggable="false" class="fa fa-angle-double-up" aria-hidden="true"></i>
         </button>
         <header class="nav">
-            <ul class="icon-list">
+            <ul class="icon-list" data-aos="fade-down">
                 <li>
                     <a href="https://github.com/Dikshit28" target="_blank" rel="noopener noreferrer">
                         <i draggable="false" class="fab fa-github" aria-hidden="true"></i>
@@ -64,9 +64,9 @@
                     </a>
                 </li>
             </ul>
-            <a href="index.html"><img src="./static/images/blue_Logo-removebg-preview.png" alt="brand" class="brand"
-                    draggable="false"></a>
-            <ul class="nav-list">
+            <a href="index.html" data-aos="fade-down"><img src="./static/images/blue_Logo-removebg-preview.png"
+                    alt="brand" class="brand" draggable="false"></a>
+            <ul class="nav-list" data-aos="fade-down">
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#about">About</a></li>
@@ -75,9 +75,9 @@
         </header>
         <div class="container" id="home">
             <div class="home">
-                <div class="des" data-aos="fade-right">
-                    <p class="grad-head">Hi I'm Dikshit</p>
-                    <p class="para intro">
+                <div class="des">
+                    <p class="grad-head" data-aos="fade-right">Hi I'm Dikshit</p>
+                    <p class="para intro" data-aos="fade-right">
                         An engineering student with knack for creative problem solving
                         <br>
                         and enthusiasm for playing around with different tech and tools
@@ -89,9 +89,9 @@
                     <img src="./static/images/circle-cropped.png" alt="My-img" class='my-img'>
                 </div>
             </div>
-            <div class="project sec " data-aos="fade-right" id="projects">
+            <div class="project sec" id="projects">
                 <hr class="grad-line">
-                <p class="grad-head">My Projects</p>
+                <p class="grad-head" data-aos="fade-right">My Projects</p>
                 <div class="cards">
                     <div class="card" data-aos="fade-up">
                         <div class="cover">
@@ -173,55 +173,67 @@
                     </div>
                 </div>
             </div>
-            <div id="skills" class='sec' data-aos="fade-right">
+            <div id="skills" class='sec'>
                 <hr class="grad-line">
-                <p class="grad-head">My Tech&nbsp;Stack</p>
+                <p class="grad-head" data-aos="fade-right">My Tech&nbsp;Stack</p>
                 <ul class="list">
-                    <li class="list-item">
+                    <li class="list-item" data-aos="fade-right">
                         <p class="skills-para para">
                             I've worked with multiple technologies as a developer to create my projects.
                         </p>
                     </li>
                 </ul>
-                <div class="tech" data-aos="fade-up">
-                    <img draggable="false" src="./static/images/icons/python.png" alt="python" class="tech-item" />
-                    <img draggable="false" src="./static/images/icons/html.png" alt="html" class="tech-item" />
-                    <img draggable="false" src="./static/images/icons/css.png" alt="css" class="tech-item" />
-                    <img draggable="false" src="./static/images/icons/js.png" alt="js" class="tech-item" />
-                    <img draggable="false" src="./static/images/icons/java.png" alt="java" class="tech-item" />
-                    <img draggable="false" src="./static/images/icons/bootstrap.png" alt="bootstrap"
+                <div class="tech">
+                    <img data-aos="fade-up" draggable="false" src="./static/images/icons/python.png" alt="python"
                         class="tech-item" />
-                    <img draggable="false" src="./static/images/icons/MongoDB.png" alt="MongoDB" class="tech-item" />
-                    <img draggable="false" src="./static/images/icons/selenium.svg" alt="selenium" class="tech-item" />
-                    <img draggable="false" src="./static/images/icons/flaskwhite.png" alt="flask" class="tech-item" />
-                    <img draggable="false" src="./static/images/icons/django-icon.png" alt="django" class="tech-item" />
-                    <img draggable="false" src="./static/images/icons/numpy.svg" alt="numpy" class="tech-item" />
-                    <img draggable="false" src="./static/images/icons/pandas_white.svg" alt="pandas_white"
+                    <img data-aos="fade-up" draggable="false" src="./static/images/icons/html.png" alt="html"
                         class="tech-item" />
-                    <img draggable="false" src="./static/images/icons/github.png" alt="github" class="tech-item" />
-                    <img draggable="false" src="./static/images/icons/visual-studio-code-icon.png" alt="vs-code"
+                    <img data-aos="fade-up" draggable="false" src="./static/images/icons/css.png" alt="css"
                         class="tech-item" />
-                    <img draggable="false" src="./static/images/icons/git-icon.png" alt="git" class="tech-item" />
+                    <img data-aos="fade-up" draggable="false" src="./static/images/icons/js.png" alt="js"
+                        class="tech-item" />
+                    <img data-aos="fade-up" draggable="false" src="./static/images/icons/java.png" alt="java"
+                        class="tech-item" />
+                    <img data-aos="fade-up" draggable="false" src="./static/images/icons/bootstrap.png" alt="bootstrap"
+                        class="tech-item" />
+                    <img data-aos="fade-up" draggable="false" src="./static/images/icons/MongoDB.png" alt="MongoDB"
+                        class="tech-item" />
+                    <img data-aos="fade-up" draggable="false" src="./static/images/icons/selenium.svg" alt="selenium"
+                        class="tech-item" />
+                    <img data-aos="fade-up" draggable="false" src="./static/images/icons/flaskwhite.png" alt="flask"
+                        class="tech-item" />
+                    <img data-aos="fade-up" draggable="false" src="./static/images/icons/django-icon.png" alt="django"
+                        class="tech-item" />
+                    <img data-aos="fade-up" draggable="false" src="./static/images/icons/numpy.svg" alt="numpy"
+                        class="tech-item" />
+                    <img data-aos="fade-up" draggable="false" src="./static/images/icons/pandas_white.svg"
+                        alt="pandas_white" class="tech-item" />
+                    <img data-aos="fade-up" draggable="false" src="./static/images/icons/github.png" alt="github"
+                        class="tech-item" />
+                    <img data-aos="fade-up" draggable="false" src="./static/images/icons/visual-studio-code-icon.png"
+                        alt="vs-code" class="tech-item" />
+                    <img data-aos="fade-up" draggable="false" src="./static/images/icons/git-icon.png" alt="git"
+                        class="tech-item" />
                 </div>
             </div>
-            <div class="sec" data-aos="fade-right" id="about">
+            <div class="sec" id="about">
                 <hr class="grad-line">
-                <p class="grad-head">My Experience</p>
+                <p class="grad-head" data-aos="fade-right">My Experience</p>
                 <ul class="list">
-                    <li class="list-item">
+                    <li class="list-item" data-aos="fade-right">
                         <p class="para">
                             Pursuing B.Tech in Computer Science with
                             <em class="em">Data science and AI specialization</em> from The
                             NorthCap University, Graduating in May 2023.
                         </p>
                     </li>
-                    <li class="list-item">
+                    <li class="list-item" data-aos="fade-right">
                         <p class="para">
                             Working as a <em class="em">Campus Captain @ Coding Minutes</em> at my University, August
                             2021-present
                         </p>
                     </li>
-                    <li class="list-item">
+                    <li class="list-item" data-aos="fade-right">
                         <p class="para">
                             Working as a <em class="em">Project Manager/Event Lead for Python Warriors</em>, a Student
                             Interest
@@ -229,18 +241,18 @@
                             2020-present.
                         </p>
                     </li>
-                    <li class="list-item">
+                    <li class="list-item" data-aos="fade-right">
                         <p class="para">
                             Working as <em class="em">Webmaster at IEEE NCU TEMS SBC</em> for the period 2021-2022.
                         </p>
                     </li>
-                    <li class="list-item">
+                    <li class="list-item" data-aos="fade-right">
                         <p class="para">
                             Got selected in the <em class="em">InternWell Upskilling and Mentorship Program</em>
                             (15th March 2021 - 15th August 2021)
                         </p>
                     </li>
-                    <li class="list-item">
+                    <li class="list-item" data-aos="fade-right">
                         <p class="para">
                             Many more to come !!!
                         </p>
@@ -249,15 +261,15 @@
             </div>
 
             <div class="contact sec" id="contact">
-                <div class="details" data-aos="fade-right">
+                <div class="details">
                     <hr class="grad-line">
-                    <p class="grad-head">Say Hi!</p>
+                    <p class="grad-head" data-aos="fade-right">Say Hi!</p>
                     <ul class="list">
-                        <li class="list-item">
+                        <li class="list-item" data-aos="fade-right">
                             <p class="para">Remember It's Good to Talk :p</p>
                         </li>
                     </ul>
-                    <ul class="icon-list con-list">
+                    <ul class="icon-list con-list" data-aos="fade-right">
                         <li class='mail-item'><a href="mailto:sanju39194@gmail.com"
                                 class="mail">sanju39194@gmail.com</a></li>
                         <li>
@@ -300,7 +312,7 @@
         <script>
             AOS.init({
                 duration: 1000,
-                easing: 'ease-out',
+                easing: 'ease',
             });
             AOS.refresh();
         </script>

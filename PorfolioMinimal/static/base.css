@@ -136,6 +136,7 @@ body {
 	);
 	border-radius: 20rem;
 	border: none;
+	overflow-x: hidden;
 }
 .sec {
 	margin-top: 2rem;
