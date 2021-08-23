@@ -141,3 +141,8 @@ body {
 	margin-top: 2rem;
 	padding-top: 2rem;
 }
+.em {
+	color: var(--cadet-blue);
+	text-shadow: var(--cadet-blue) 0rem 0rem 0.1rem;
+	text-decoration: underline;
+}

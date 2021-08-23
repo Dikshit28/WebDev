@@ -39,14 +39,12 @@
 	justify-content: center;
 	padding: 0rem 1rem 0rem 0rem;
 	opacity: 0.5;
-	transform: rotate(-5deg);
 }
 .nav-list li:hover,
 .nav-list li:focus,
 .nav-list li:active {
 	opacity: 1;
 	outline: 0;
-	transform: rotate(0deg);
 }
 .nav a {
 	text-decoration: none;
@@ -176,6 +174,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 }
 .ilustration {
 	position: absolute;
@@ -210,22 +209,4 @@ footer {
 footer a {
 	color: var(--light-coral);
 	text-decoration: none;
-}
-
-.fader {
-	transition: opacity 1s ease-in, transform 1s ease-in-out;
-	opacity: 0;
-}
-.fade-L {
-	transform: translate(-50%, 0%);
-}
-.fade-R {
-	transform: translate(50%, 0%);
-}
-.fade-Up {
-	transform: translate(0%, 50%);
-}
-.fader.appear {
-	opacity: 1;
-	transform: translate(0%, 0%);
 }

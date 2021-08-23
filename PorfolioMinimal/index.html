@@ -31,6 +31,7 @@
         <link rel="stylesheet" href="./static/home.css">
         <link rel="stylesheet" href="./static/slider.css">
         <link rel="stylesheet" href="./static/big_res.css">
+        <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
 
         <title>Dikshit</title>
     </head>
@@ -74,25 +75,25 @@
         </header>
         <div class="container" id="home">
             <div class="home">
-                <div class="des fader fade-L">
+                <div class="des" data-aos="fade-right">
                     <p class="grad-head">Hi I'm Dikshit</p>
                     <p class="para intro">
                         An engineering student with knack for creative problem solving
                         <br>
                         and enthusiasm for playing around with different tech and tools
                     </p>
-                    <a href="https://drive.google.com/file/d/11tczbylpjevPIlOG3IJJFZUqYk-_vhnD/view" target="_blank"
-                        rel="noopener noreferrer" class='buts para'>Resume</a>
+                    <a href="https://drive.google.com/file/d/1XxhPj43q_oMl5ZLPiHmqhSK5fQ5cehkb/view?usp=sharing"
+                        target="_blank" rel="noopener noreferrer" class='buts para'>Resume</a>
                 </div>
-                <div class="img fader fade-R">
+                <div class="img" data-aos="fade-left">
                     <img src="./static/images/circle-cropped.png" alt="My-img" class='my-img'>
                 </div>
             </div>
-            <div class="project sec fader fade-L" id="projects">
+            <div class="project sec " data-aos="fade-right" id="projects">
                 <hr class="grad-line">
                 <p class="grad-head">My Projects</p>
                 <div class="cards">
-                    <div class="card fader fade-Up">
+                    <div class="card" data-aos="fade-up">
                         <div class="cover">
                             <a href="https://github.com/Dikshit28/atten-bot" target="_blank" rel="noopener noreferrer"
                                 class="git">
@@ -111,7 +112,7 @@
                             <img src="./static/images/icons/MongoDB.png" alt="sql" draggable="false">
                         </div>
                     </div>
-                    <div class="card fader fade-Up">
+                    <div class="card" data-aos="fade-up">
                         <div class="cover">
                             <a href="https://github.com/Dikshit28/ADA_Project" target="_blank" rel="noopener noreferrer"
                                 class="git"><i class="fa fa-code" aria-hidden="true"></i></a>
@@ -131,7 +132,7 @@
                             <img src="./static/images/icons/js.png" alt="js" draggable="false">
                         </div>
                     </div>
-                    <div class="card fader fade-Up">
+                    <div class="card" data-aos="fade-up">
                         <div class="cover">
                             <a href="" class="git disable" target="_blank" rel="noopener noreferrer"><i
                                     class="fa fa-code" aria-hidden="true"></i></a>
@@ -152,7 +153,7 @@
                             <img src="./static/images/icons/YouTube.svg" alt="youtube" draggable="false">
                         </div>
                     </div>
-                    <div class="card fader fade-Up">
+                    <div class="card" data-aos="fade-up">
                         <div class="cover">
                             <a href="https://www.youtube.com/playlist?list=PL8nLQxtPbaSwp5HwQkVJmALBoS8A3NMAo"
                                 target="_blank" rel="noopener noreferrer" class="git">
@@ -172,7 +173,7 @@
                     </div>
                 </div>
             </div>
-            <div id="skills" class='sec fader fade-L'>
+            <div id="skills" class='sec' data-aos="fade-right">
                 <hr class="grad-line">
                 <p class="grad-head">My Tech&nbsp;Stack</p>
                 <ul class="list">
@@ -182,7 +183,7 @@
                         </p>
                     </li>
                 </ul>
-                <div class="tech fader fade-Up">
+                <div class="tech" data-aos="fade-up">
                     <img draggable="false" src="./static/images/icons/python.png" alt="python" class="tech-item" />
                     <img draggable="false" src="./static/images/icons/html.png" alt="html" class="tech-item" />
                     <img draggable="false" src="./static/images/icons/css.png" alt="css" class="tech-item" />
@@ -190,6 +191,8 @@
                     <img draggable="false" src="./static/images/icons/java.png" alt="java" class="tech-item" />
                     <img draggable="false" src="./static/images/icons/bootstrap.png" alt="bootstrap"
                         class="tech-item" />
+                    <img draggable="false" src="./static/images/icons/MongoDB.png" alt="MongoDB" class="tech-item" />
+                    <img draggable="false" src="./static/images/icons/selenium.svg" alt="selenium" class="tech-item" />
                     <img draggable="false" src="./static/images/icons/flaskwhite.png" alt="flask" class="tech-item" />
                     <img draggable="false" src="./static/images/icons/django-icon.png" alt="django" class="tech-item" />
                     <img draggable="false" src="./static/images/icons/numpy.svg" alt="numpy" class="tech-item" />
@@ -201,31 +204,40 @@
                     <img draggable="false" src="./static/images/icons/git-icon.png" alt="git" class="tech-item" />
                 </div>
             </div>
-            <div class="sec fader fade-L" id="about">
+            <div class="sec" data-aos="fade-right" id="about">
                 <hr class="grad-line">
                 <p class="grad-head">My Experience</p>
                 <ul class="list">
                     <li class="list-item">
                         <p class="para">
-                            Pursuing B.Tech in Computer Science with Data science and AI specialization from The
+                            Pursuing B.Tech in Computer Science with
+                            <em class="em">Data science and AI specialization</em> from The
                             NorthCap University, Graduating in May 2023.
                         </p>
                     </li>
                     <li class="list-item">
                         <p class="para">
-                            Working as a Project Manager/Event Lead for Python Warriors, a Student Interest Group,
+                            Working as a <em class="em">Campus Captain @ Coding Minutes</em> at my University, August
+                            2021-present
+                        </p>
+                    </li>
+                    <li class="list-item">
+                        <p class="para">
+                            Working as a <em class="em">Project Manager/Event Lead for Python Warriors</em>, a Student
+                            Interest
+                            Group,
                             2020-present.
                         </p>
                     </li>
                     <li class="list-item">
                         <p class="para">
-                            Working as webmaster at IEEE NCU TEMS SBC for the period 2021-2022.
+                            Working as <em class="em">Webmaster at IEEE NCU TEMS SBC</em> for the period 2021-2022.
                         </p>
                     </li>
                     <li class="list-item">
                         <p class="para">
-                            Got selected in the InternWell Upskilling and Mentorship Program
-                            (15th March 2021 - 15th August 2021), aimed to provide kickstart to the students.
+                            Got selected in the <em class="em">InternWell Upskilling and Mentorship Program</em>
+                            (15th March 2021 - 15th August 2021)
                         </p>
                     </li>
                     <li class="list-item">
@@ -237,7 +249,7 @@
             </div>
 
             <div class="contact sec" id="contact">
-                <div class="details fader fade-L">
+                <div class="details" data-aos="fade-right">
                     <hr class="grad-line">
                     <p class="grad-head">Say Hi!</p>
                     <ul class="list">
@@ -272,7 +284,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="ilus fader fade-R">
+                <div class="ilus" data-aos="fade-left">
                     <img src="./static/images/29_Handwithphone04withlogo.png" alt="ilus" class='ilustration'>
                 </div>
             </div>
@@ -281,10 +293,17 @@
                 <hr>
                 <br>
                 <p>Made with <i class="fa fa-heart" aria-hidden="true"></i> by Dikshit</p>
-                <p>© 2021 <a href="#home" class="a">Dikshit</a>. All rights reserved.</p>
             </footer>
         </div>
         <script src='./script/app.js'></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+                easing: 'ease-out',
+            });
+            AOS.refresh();
+        </script>
     </body>
 
 </html>

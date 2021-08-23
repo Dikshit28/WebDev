@@ -21,27 +21,3 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
-const faders = document.querySelectorAll(".fader");
-const appearOptions = {
-    threshold: 0.2,
-    rootMargin: '0px 0px 0px 0px',
-};
-
-const appearOnScroll = new IntersectionObserver(function (
-    entries,
-    appearOnScroll
-) {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            entry.target.classList.remove("appear");
-        } else {
-            entry.target.classList.add("appear");
-        }
-    });
-},
-    appearOptions);
-
-faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-});
