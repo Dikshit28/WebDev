@@ -1,0 +1,22 @@
+:root {
+	/* CSS HEX */
+	--imperial-red: #e63946ff;
+	--honeydew: #f1faeeff;
+	--powder-blue: #a8dadcff;
+	--celadon-blue: #457b9dff;
+	--prussian-blue: #1d3557ff;
+}
+.main {
+	width: 100%;
+	margin: 0px auto;
+}
+.sec1 {
+	background-color: var(--celadon-blue);
+	width: 90%;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 4px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
